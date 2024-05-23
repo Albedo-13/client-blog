@@ -7,6 +7,9 @@
   font-weight: 700;
   font-size: $fs18;
   transition: 0.25s all;
+  padding: 16px 48px;
+  max-height: 56px;
+  color: $denim;
 
   &:hover {
     border-radius: 8px;
@@ -14,11 +17,16 @@
   }
 }
 
+.primaryButton {
+  background-color: $yellow;
+
+  &:hover {
+    background-color: $yellow-hover;
+  }
+}
+
 .secondaryButton {
-  padding: 16px 48px;
-  max-height: 56px;
   background-color: $white;
-  color: $denim;
 
   &:hover {
     background-color: $ghost-white;
