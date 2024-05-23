@@ -1,0 +1,26 @@
+@import "@/styles/variables.scss";
+
+.button {
+  cursor: pointer;
+  border: none;
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: $fs18;
+  transition: 0.25s all;
+
+  &:hover {
+    border-radius: 8px;
+    transition: 0.25s all;
+  }
+}
+
+.secondaryButton {
+  padding: 16px 48px;
+  max-height: 56px;
+  background-color: $white;
+  color: $denim;
+
+  &:hover {
+    background-color: $ghost-white;
+  }
+}

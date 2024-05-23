@@ -1,4 +1,4 @@
-$main: #232536;
+$denim: #232536;
 $yellow: #ffd050;
 $purple: #592ea9;
 $dark-gray: #4c4c4c;
@@ -6,14 +6,26 @@ $gray: #6d6e76;
 $light-gray: #f4f4f4;
 $ghost-white: #f4f0f8;
 $antique-white: #fbf6ea;
+$black: #000000;
+$white: #ffffff;
 
 $yellow-hover: #edc14a;
 
-$fs56: "56px";
-$fs48: "48px";
-$fs36: "36px";
-$fs28: "28px";
-$fs24: "24px";
-$fs20: "20px";
-$fs16: "16px";
-$fs14: "14px";
+$font-family: var(--font-inter);
+$second-family: var(--font-sen);
+
+$fs56: 56px;
+$fs48: 48px;
+$fs36: 36px;
+$fs28: 28px;
+$fs24: 24px;
+$fs20: 20px;
+$fs18: 18px;
+$fs16: 16px;
+$fs14: 14px;
+
+$screen-xs: 400px;
+$screen-sm: 600px;
+$screen-md: 900px;
+$screen-lg: 1200px;
+$screen-xl: 1440px;

@@ -1,5 +1,12 @@
+import { Header } from "@/components/header/header";
+
 import styles from "./page.module.scss";
 
 export default function Home() {
-  return <main className={styles.main}>main page</main>;
+  return (
+    <>
+      <Header />
+      <div style={{ height: "200px", backgroundColor: "gray" }}></div>
+    </>
+  );
 }

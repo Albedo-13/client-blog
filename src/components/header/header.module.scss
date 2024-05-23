@@ -1,0 +1,41 @@
+@import "@/styles/variables.scss";
+
+.header {
+  padding: 12px 35px;
+  min-height: 56px;
+  background-color: $denim;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: $fs24;
+  color: $white;
+  transition: 0.25s all;
+
+  &:hover {
+    transition: 0.25s all;
+    color: $gray;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.navWrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.link {
+  color: $white;
+  transition: 0.25s all;
+
+  &:hover {
+    transition: 0.25s all;
+    color: $gray;
+  }
+}
