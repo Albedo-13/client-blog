@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
-// import { Inter, Sen } from "next/font/google";
 import "@/styles/globals.scss";
+
+import type { Metadata } from "next";
+
 import { inter, sen } from "@/styles/fonts";
 
 export const metadata: Metadata = {
