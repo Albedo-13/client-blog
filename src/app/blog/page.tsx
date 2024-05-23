@@ -1,4 +1,4 @@
-import React from 'react'
+import "./blog.module.scss";
 
 export default function Page() {
   return (
