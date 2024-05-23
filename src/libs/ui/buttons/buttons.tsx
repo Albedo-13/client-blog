@@ -1,13 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export function PrimaryButton() {
-  return (
-    <button>buttons</button>
-  )
+  return <button>buttons</button>;
 }
 
 export function SecondaryButton() {
-  return (
-    <button>buttons</button>
-  )
+  return <button>buttons</button>;
 }

@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
+    "check": "prettier --check \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
+    "prepare": "husky"
   },
   "dependencies": {
     "next": "14.2.3",
@@ -22,6 +25,8 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "eslint-plugin-simple-import-sort": "^12.1.0",
+    "husky": "^8.0.0",
+    "prettier": "^3.2.5",
     "typescript": "^5"
   }
 }
