@@ -1,0 +1,49 @@
+@import "@/styles/variables.scss";
+
+.wrapper {
+  padding: 32px;
+  border: 1px solid rgba($gray, 0.1);
+}
+
+.head {
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 133%;
+  letter-spacing: -0.06em;
+  color: $denim;
+  margin-bottom: 32px;
+}
+
+.creds {
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 32px;
+  color: $dark-gray;
+
+  span {
+    color: $purple;
+  }
+}
+
+.title {
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 143%;
+  letter-spacing: -0.04em;
+  margin-top: 16px;
+  color: $denim;
+}
+
+.description {
+  line-height: 175%;
+  margin: 16px 0 32px;
+  color: $gray;
+}
+
+.image {
+  max-height: 350px;
+  width: auto;
+  max-width: 100%;
+}

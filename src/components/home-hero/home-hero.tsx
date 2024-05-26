@@ -1,5 +1,3 @@
-import "@/styles/globals.scss";
-
 import { PrimaryButton } from "@/libs/ui/buttons/buttons";
 
 import styles from "./home-hero.module.scss";
@@ -7,7 +5,7 @@ import styles from "./home-hero.module.scss";
 export function HomeHero() {
   return (
     <section className={styles.section}>
-      <div className={styles.content}>
+      <div>
         <div className="container">
           <p className={styles.subtitle}>
             posted on <span>startup</span>
