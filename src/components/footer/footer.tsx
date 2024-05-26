@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className={styles.footer}>
       <div className="container">
-        <Navigation></Navigation>
+        <Navigation videoVisible={false} />
       </div>
     </footer>
   );

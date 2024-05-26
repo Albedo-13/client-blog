@@ -4,12 +4,13 @@ import { SecondaryButton } from "@/libs/ui/buttons/buttons";
 
 import styles from "./navigation.module.scss";
 
-export function Navigation() {
+export function Navigation({ videoVisible }: any) {
+  console.log(videoVisible);
   return (
     <nav className={styles.flex}>
-      <a className={styles.logo} href="#">
+      <Link className={styles.logo} href="#">
         Modsen Client Blog
-      </a>
+      </Link>
       <div className={styles.navWrapper}>
         <ul className={styles.flex}>
           <li>
@@ -33,7 +34,9 @@ export function Navigation() {
             </Link>
           </li>
         </ul>
-        <SecondaryButton>Video about us</SecondaryButton>
+        <div className={styles.isVisible} data-visible={videoVisible}>
+          <SecondaryButton>Video about us</SecondaryButton>
+        </div>
       </div>
     </nav>
   );

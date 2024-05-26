@@ -29,3 +29,7 @@
     color: $gray;
   }
 }
+
+.isVisible[data-visible="false"] {
+  display: none;
+}
