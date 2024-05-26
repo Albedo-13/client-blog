@@ -10,10 +10,8 @@
   font-weight: 700;
   font-size: $fs24;
   color: $white;
-  transition: 0.25s all;
 
   &:hover {
-    transition: 0.25s all;
     color: $gray;
   }
 }
@@ -32,10 +30,8 @@
 
 .link {
   color: $white;
-  transition: 0.25s all;
 
   &:hover {
-    transition: 0.25s all;
     color: $gray;
   }
 }

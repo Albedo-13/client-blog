@@ -16,11 +16,9 @@
 
 .card {
   padding: 32px;
-  transition: 0.25s all;
 
   &:hover {
     background: $antique-white;
-    transition: 0.25s all;
   }
 }
 

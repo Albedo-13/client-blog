@@ -6,14 +6,12 @@
   font-family: $second-family;
   font-weight: 700;
   font-size: $fs18;
-  transition: 0.25s all;
   padding: 16px 48px;
   max-height: 56px;
   color: $denim;
 
   &:hover {
     border-radius: 8px;
-    transition: 0.25s all;
   }
 }
 

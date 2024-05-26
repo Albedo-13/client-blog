@@ -3,6 +3,11 @@
 
 * {
   font-family: $font-family;
+  transition: 0.25s all;
+
+  &:hover {
+    transition: 0.25s all;
+  }
 }
 
 h1,
