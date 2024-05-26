@@ -1,3 +1,4 @@
+import { AboutUs } from "@/components/about-us/about-us";
 import { FeaturedPosts } from "@/components/featured-posts/featured-posts";
 import { Header } from "@/components/header/header";
 import { HomeHero } from "@/components/home-hero/home-hero";
@@ -10,6 +11,7 @@ export default function Home() {
       <Header />
       <HomeHero />
       <FeaturedPosts />
+      <AboutUs />
       <div style={{ height: "200px", backgroundColor: "gray" }}></div>
     </>
   );
