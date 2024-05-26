@@ -10,33 +10,3 @@
   max-width: $screen-xl;
   margin: 0 auto;
 }
-
-.logo {
-  font-weight: 700;
-  font-size: $fs24;
-  color: $white;
-
-  &:hover {
-    color: $gray;
-  }
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-}
-
-.navWrapper {
-  display: flex;
-  gap: 32px;
-}
-
-.link {
-  color: $white;
-
-  &:hover {
-    color: $gray;
-  }
-}
