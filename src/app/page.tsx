@@ -5,6 +5,7 @@ import { Header } from "@/components/header/header";
 import { HomeHero } from "@/components/home-hero/home-hero";
 import { ListOfAuthors } from "@/components/list-of-authors/list-of-authors";
 import { LogosList } from "@/components/logos-list/logos-list";
+import { Testimonials } from "@/components/testimonials/testimonials";
 import { WhyWeStarted } from "@/components/why-we-started/why-we-started";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <WhyWeStarted />
       <ListOfAuthors />
       <LogosList />
+      <Testimonials />
       <div style={{ height: "200px", backgroundColor: "gray" }}></div>
     </>
   );

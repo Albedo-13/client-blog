@@ -1,0 +1,98 @@
+@import "@/styles/variables.scss";
+
+.section {
+  margin: 128px 0;
+}
+
+.wrapper {
+  background-color: $antique-white;
+  padding: 80px 110px;
+  display: flex;
+  gap: 100px;
+}
+
+.subtitle {
+  font-weight: 600;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  color: $denim;
+}
+
+.title {
+  font-family: $second-family;
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: -0.06em;
+}
+
+.description {
+  line-height: 175%;
+  margin-top: 16px;
+  color: $denim;
+}
+
+.separator {
+  min-height: 100%;
+  border-left: 1px solid rgba($gray, 0.4);
+  position: relative;
+}
+
+.testimonial {
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  color: $denim;
+}
+
+.authorWrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.authorImage {
+  border-radius: 100%;
+}
+
+.authorName {
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 24px;
+  color: $denim;
+}
+
+.authorCity {
+  color: $gray;
+  margin-top: 4px;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carouselArrows {
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  bottom: 80px;
+  right: 110px;
+}
+
+.arrow {
+  border-radius: 100%;
+  background: $white;
+  border: 0px;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $denim;
+    color: $white;
+    transform: scale(1.1);
+  }
+}
