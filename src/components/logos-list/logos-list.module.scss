@@ -1,0 +1,39 @@
+@import "@/styles/variables.scss";
+
+.section {
+  margin: 128px 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+
+  & > * {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  & > img {
+    filter: $filter-gray;
+  }
+}
+
+.prefix {
+  font-size: 14px;
+  color: $gray;
+
+  span {
+    font-family: $second-family;
+    font-weight: 700;
+    font-size: 24px;
+    color: $gray;
+  }
+}
+
+.image {
+  width: auto;
+  height: 32px;
+}

@@ -4,9 +4,8 @@ import { FeaturedPosts } from "@/components/featured-posts/featured-posts";
 import { Header } from "@/components/header/header";
 import { HomeHero } from "@/components/home-hero/home-hero";
 import { ListOfAuthors } from "@/components/list-of-authors/list-of-authors";
+import { LogosList } from "@/components/logos-list/logos-list";
 import { WhyWeStarted } from "@/components/why-we-started/why-we-started";
-
-import { styles } from "./page.module.scss";
 
 export default function Home() {
   return (
@@ -18,6 +17,7 @@ export default function Home() {
       <ChooseCategory />
       <WhyWeStarted />
       <ListOfAuthors />
+      <LogosList />
       <div style={{ height: "200px", backgroundColor: "gray" }}></div>
     </>
   );
