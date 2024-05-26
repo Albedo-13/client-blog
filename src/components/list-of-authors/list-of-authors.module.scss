@@ -1,0 +1,22 @@
+@import "@/styles/variables.scss";
+
+.section {
+  margin: 128px 0;
+}
+
+.title {
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: -0.06em;
+  text-align: center;
+  color: $denim;
+  margin-bottom: 48px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}

@@ -7,7 +7,7 @@ import styles from "./header.module.scss";
 export function Header() {
   return (
     <header className={styles.header}>
-      <div className="container">
+      <div className={styles.wrapper}>
         <nav className={styles.flex}>
           <a className={styles.logo} href="#">
             Modsen Client Blog
