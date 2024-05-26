@@ -3,6 +3,7 @@ import { ChooseCategory } from "@/components/choose-category/choose-category";
 import { FeaturedPosts } from "@/components/featured-posts/featured-posts";
 import { Header } from "@/components/header/header";
 import { HomeHero } from "@/components/home-hero/home-hero";
+import { JoinOurTeam } from "@/components/join-our-team/join-our-team";
 import { ListOfAuthors } from "@/components/list-of-authors/list-of-authors";
 import { LogosList } from "@/components/logos-list/logos-list";
 import { Testimonials } from "@/components/testimonials/testimonials";
@@ -20,6 +21,7 @@ export default function Home() {
       <ListOfAuthors />
       <LogosList />
       <Testimonials />
+      <JoinOurTeam />
       <div style={{ height: "200px", backgroundColor: "gray" }}></div>
     </>
   );
