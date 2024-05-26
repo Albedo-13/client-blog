@@ -5,3 +5,49 @@
   padding: 60px 0;
   color: $white;
 }
+
+.title {
+  font-family: $second-family;
+  font-size: 36px;
+  line-height: 133%;
+  letter-spacing: -0.06em;
+}
+
+.input {
+  color: $white;
+  padding: 14px 24px;
+  background-color: transparent;
+  border: 1px solid $dark-gray;
+  margin-right: 24px;
+
+  &::placeholder {
+    color: $gray;
+  }
+}
+
+.inputWrapper {
+  text-align: right;
+}
+
+.wrapper {
+  padding: 80px 64px;
+  background-color: rgba($white, 0.05);
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  & > :first-child {
+    flex-basis: 50%;
+  }
+}
+
+.address {
+  font-style: normal;
+}
+
+.socials {
+  background-color: red;
+
+  & > a > img {
+    background-color: yellow;
+  }
+}
