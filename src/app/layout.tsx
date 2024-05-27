@@ -2,6 +2,8 @@ import "@/styles/globals.scss";
 
 import type { Metadata } from "next";
 
+import { Footer } from "@/components/footer/footer";
+import { Header } from "@/components/header/header";
 import { inter, sen } from "@/styles/fonts";
 
 export const metadata: Metadata = {
@@ -16,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${sen.variable}`}>{children}</body>
+      <body className={`${inter.variable} ${sen.variable}`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

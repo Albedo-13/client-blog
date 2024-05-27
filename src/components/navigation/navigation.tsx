@@ -8,13 +8,13 @@ export function Navigation({ videoVisible }: any) {
   console.log(videoVisible);
   return (
     <nav className={styles.flex}>
-      <Link className={styles.logo} href="#">
+      <Link className={styles.logo} href="/">
         Modsen Client Blog
       </Link>
       <div className={styles.navWrapper}>
         <ul className={styles.flex}>
           <li>
-            <Link className={styles.link} href="#">
+            <Link className={styles.link} href="/">
               Home
             </Link>
           </li>

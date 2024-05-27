@@ -1,0 +1,60 @@
+@import "@/styles/variables.scss";
+
+.section {
+  background-color: $ghost-white;
+  padding: 80px 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapperLeft {
+  flex-basis: 45%;
+}
+
+.wrapperRight {
+  max-width: 515px;
+  height: auto;
+
+  img {
+    vertical-align: middle;
+  }
+}
+
+.subtitle {
+  font-family: $font-family;
+  font-weight: 500;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  color: $denim;
+}
+
+.title {
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 133%;
+  letter-spacing: -0.06em;
+  margin-top: 20px;
+  color: $denim;
+}
+
+.creds {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  margin-top: 16px;
+  color: $dark-gray;
+
+  span {
+    color: $purple;
+  }
+}
+
+.description {
+  line-height: 175%;
+  margin: 16px 0 32px;
+  color: $gray;
+}
