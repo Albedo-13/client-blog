@@ -24,8 +24,6 @@ export default function Home() {
       <Testimonials />
       <JoinOurTeam />
       <Footer />
-      {/* TODO: remove line */}
-      <div style={{ height: "200px", backgroundColor: "gray" }}></div>
     </>
   );
 }

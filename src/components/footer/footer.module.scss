@@ -42,12 +42,19 @@
 
 .address {
   font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 48px;
 }
 
 .socials {
-  background-color: red;
+  display: flex;
+  gap: 26px;
+}
 
-  & > a > img {
-    background-color: yellow;
-  }
+.contacts {
+  line-height: 175%;
+  color: $white;
+  opacity: 0.7;
 }

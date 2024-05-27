@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import facebookIcon from "/public/socials/facebook.svg";
-import instagramIcon from "/public/socials/instagram.svg";
-import linkedinIcon from "/public/socials/linkedin.svg";
-import twitterIcon from "/public/socials/twitter.svg";
+import facebookNegIcon from "/public/socials/facebook-neg.svg";
+import instagramNegIcon from "/public/socials/instagram-neg.svg";
+import linkedinNegIcon from "/public/socials/linkedin-neg.svg";
+import twitterNegIcon from "/public/socials/twitter-neg.svg";
 import { PrimaryButton } from "@/libs/ui/buttons/buttons";
 
 import { Navigation } from "../navigation/navigation";
@@ -23,13 +23,22 @@ export function Footer() {
           </div>
         </div>
         <address className={styles.address}>
-          <div>
+          <div className={styles.contacts}>
             <p>Finstreet 118 2561 Fintown</p>
             <p>Hello@finsweet.com 020 7993 2905</p>
           </div>
           <div className={styles.socials}>
-            <Link href="#">
-              <Image src={facebookIcon} alt="facebook" width={32} height={32} />
+            <Link href="https://www.facebook.com/ModsenSoftware/">
+              <Image src={facebookNegIcon} alt="facebook" width={24} height={24} />
+            </Link>
+            <Link href="https://x.com/modsencompany">
+              <Image src={twitterNegIcon} alt="twitter" width={24} height={24} />
+            </Link>
+            <Link href="https://www.instagram.com/modsencompany/">
+              <Image src={instagramNegIcon} alt="instagram" width={24} height={24} />
+            </Link>
+            <Link href="https://www.linkedin.com/company/modsen/">
+              <Image src={linkedinNegIcon} alt="linkedin" width={24} height={24} />
             </Link>
           </div>
         </address>
