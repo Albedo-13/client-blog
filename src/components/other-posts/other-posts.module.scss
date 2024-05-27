@@ -1,6 +1,20 @@
 @import "@/styles/variables.scss";
 
+.section {
+  margin: 128px 0;
+}
+
 .wrapper {
   display: flex;
   gap: 32px;
+}
+
+.title {
+  margin-bottom: 32px;
+}
+
+.separator {
+  border: none;
+  border-bottom: 1px solid $gray;
+  opacity: 0.3;
 }

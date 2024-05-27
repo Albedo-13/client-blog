@@ -8,15 +8,15 @@ export function OtherPosts() {
   const posts = POSTS.slice(0, 3);
 
   return (
-    <section>
+    <section className={styles.section}>
       <div className="container">
-        <h2>What to read next</h2>
+        <h2 className={styles.title}>What to read next</h2>
         <div className={styles.wrapper}>
-          {posts.map((post, index) => (
+          {posts.map((post) => (
             <OtherPost key={post.id} post={post} />
           ))}
         </div>
-        <hr />
+        <hr className={styles.separator} />
       </div>
     </section>
   );
