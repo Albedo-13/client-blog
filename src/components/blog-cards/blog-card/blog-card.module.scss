@@ -1,0 +1,46 @@
+@import "@/styles/variables.scss";
+
+.card {
+  display: flex;
+  gap: 32px;
+  padding: 32px;
+
+  &:hover {
+    background-color: $antique-white;
+  }
+}
+
+.image {
+  flex-basis: 30%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.wrapper {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.category {
+  font-weight: 600;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  color: $purple;
+}
+
+.title {
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: -0.06em;
+  margin-top: 20px;
+  color: $denim;
+}
+
+.description {
+  line-height: 175%;
+  margin-top: 16px;
+  color: $gray;
+}

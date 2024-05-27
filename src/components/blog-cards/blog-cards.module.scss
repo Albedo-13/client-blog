@@ -1,0 +1,53 @@
+@import "@/styles/variables.scss";
+
+.section {
+  margin: 64px 0 128px;
+}
+
+.title {
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: -0.04em;
+  margin-bottom: 32px;
+  color: $denim;
+}
+
+.divider {
+  border: none;
+  border-bottom: 1px solid $gray;
+  opacity: 0.32;
+  margin-bottom: 32px;
+}
+
+.pagination {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.arrow {
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 24px;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+  color: $denim;
+
+  &:disabled {
+    color: $gray;
+    cursor: default;
+
+    &:hover {
+      font-size: 24px;
+    }
+  }
+
+  &:hover {
+    font-size: 28px;
+  }
+}
