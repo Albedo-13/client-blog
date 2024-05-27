@@ -4,8 +4,11 @@ import { SecondaryButton } from "@/libs/ui/buttons/buttons";
 
 import styles from "./navigation.module.scss";
 
-export function Navigation({ videoVisible }: any) {
-  console.log(videoVisible);
+type NavigationProps = {
+  videoVisible: boolean;
+};
+
+export function Navigation({ videoVisible }: NavigationProps) {
   return (
     <nav className={styles.flex}>
       <Link className={styles.logo} href="/">
