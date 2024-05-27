@@ -1,25 +1,8 @@
 import Image from "next/image";
 
-import styles from "./testimonials.module.scss";
+import { TESTIMONIALS } from "@/data/testimonials";
 
-const TESTIMONIALS_DATA = [
-  {
-    id: 1,
-    name: "Jonathan Vallem",
-    image: "/authors/author-1.webp",
-    city: "New york, USA",
-    testimonial:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    id: 2,
-    name: "John Doe",
-    image: "/authors/author-2.webp",
-    city: "Arizona, USA",
-    testimonial:
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-  },
-];
+import styles from "./testimonials.module.scss";
 
 export function Testimonials() {
   return (
@@ -41,15 +24,15 @@ export function Testimonials() {
             </p>
             <div className={styles.authorWrapper}>
               <Image
-                src={TESTIMONIALS_DATA[0].image}
-                alt={TESTIMONIALS_DATA[0].name}
+                src={TESTIMONIALS[0].image}
+                alt={TESTIMONIALS[0].name}
                 width={48}
                 height={48}
                 className={styles.authorImage}
               />
               <div>
-                <p className={styles.authorName}>{TESTIMONIALS_DATA[0].name}</p>
-                <p className={styles.authorCity}>{TESTIMONIALS_DATA[0].city}</p>
+                <p className={styles.authorName}>{TESTIMONIALS[0].name}</p>
+                <p className={styles.authorCity}>{TESTIMONIALS[0].city}</p>
               </div>
             </div>
           </div>

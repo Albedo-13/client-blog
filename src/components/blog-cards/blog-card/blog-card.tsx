@@ -7,7 +7,11 @@ type BlogCardProps = {
   title: string;
   description: string;
   image: string;
-  category: string;
+  category: {
+    label: string;
+    icon: string;
+    description: string;
+  };
 };
 
 export function BlogCard({ title, description, image, category }: BlogCardProps) {
@@ -15,7 +19,7 @@ export function BlogCard({ title, description, image, category }: BlogCardProps)
     <Link href="#" className={styles.card}>
       <Image src={image} alt={title} className={styles.image} width={350} height={250} />
       <div className={styles.wrapper}>
-        <p className={styles.category}>{category}</p>
+        <p className={styles.category}>{category.label}</p>
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.description}>{description}</p>
       </div>
