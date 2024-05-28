@@ -7,7 +7,7 @@ import styles from "./mission-vision.module.scss";
 
 export function MissionVision() {
   return (
-    <div className="container">
+    <section className="container">
       <div className={styles.wrapper}>
         <div className={styles.aboutUsHeader}>
           <div className={styles.aboutUsHeaderLeft}>
@@ -41,6 +41,6 @@ export function MissionVision() {
         </div>
         <AboutUs />
       </div>
-    </div>
+    </section>
   );
 }
