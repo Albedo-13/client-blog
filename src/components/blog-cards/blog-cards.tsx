@@ -1,6 +1,6 @@
 import { POSTS } from "@/data/blog-posts";
 
-import { BlogCard } from "./blog-card/blog-card";
+import { PostCard } from "../post-card/post-card";
 import styles from "./blog-cards.module.scss";
 
 export function BlogCards() {
@@ -11,7 +11,7 @@ export function BlogCards() {
         <hr className={styles.divider} />
         <div className={styles.cards}>
           {POSTS.map((postData) => (
-            <BlogCard key={postData.id} {...postData} />
+            <PostCard key={postData.id} {...postData} />
           ))}
         </div>
 

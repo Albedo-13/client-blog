@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "./blog-card.module.scss";
+import styles from "./post-card.module.scss";
 
 type BlogCardProps = {
   title: string;
@@ -14,7 +14,7 @@ type BlogCardProps = {
   };
 };
 
-export function BlogCard({ title, description, image, category }: BlogCardProps) {
+export function PostCard({ title, description, image, category }: BlogCardProps) {
   return (
     <Link href="#" className={styles.card}>
       <Image src={image} alt={title} className={styles.image} width={350} height={250} />
