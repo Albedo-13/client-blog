@@ -1,0 +1,26 @@
+@import "@/styles/variables.scss";
+
+.section {
+  margin: 128px 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards {
+  flex-basis: 65%;
+}
+
+.filters {
+  flex-basis: 25%;
+}
+
+.notFound {
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: -0.06em;
+  color: $denim;
+}

@@ -1,8 +1,8 @@
 export enum TAGS {
-  "Experience",
-  "Business",
-  "Screen",
-  "Technology",
-  "Marketing",
-  "Life",
+  "Experience" = "Experience",
+  "Business" = "Business",
+  "Screen" = "Screen",
+  "Technology" = "Technology",
+  "Marketing" = "Marketing",
+  "Life" = "Life",
 }
