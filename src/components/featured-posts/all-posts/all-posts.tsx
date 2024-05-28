@@ -15,7 +15,7 @@ export default function AllPosts() {
         <Link href="#" className={styles.card} key={index}>
           <div className={styles.wrapper}>
             <p className={styles.creds}>
-              By <span>{post.author}</span> | {post.date}
+              By <span>{post.author.name}</span> | {post.date}
             </p>
             <p className={styles.title}>{post.title}</p>
           </div>

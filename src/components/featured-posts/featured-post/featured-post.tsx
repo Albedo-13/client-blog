@@ -15,7 +15,7 @@ export default function FeaturedPost() {
       <div className={styles.wrapper}>
         <Image className={styles.image} src={postImage} alt="post image" />
         <p className={styles.creds}>
-          By <span>{post.author}</span> | {post.date}
+          By <span>{post.author.name}</span> | {post.date}
         </p>
         <p className={styles.title}>{post.title}</p>
         <p className={styles.description}>{post.description}</p>

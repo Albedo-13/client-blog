@@ -15,7 +15,7 @@ export function HomeHero() {
           </p>
           <h1 className={styles.title}>{post.title}</h1>
           <p className={styles.creds}>
-            By <span>{post.author}</span> | {post.date}
+            By <span>{post.author.name}</span> | {post.date}
           </p>
           <p className={styles.description}>{post.description}</p>
 

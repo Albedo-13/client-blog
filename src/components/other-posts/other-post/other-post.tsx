@@ -10,7 +10,7 @@ export function OtherPost({ post }: { post: BlogPost }) {
     <Link href="#" className={styles.card}>
       <Image src={post.image} className={styles.image} alt={post.title} width={350} height={250} />
       <p className={styles.creds}>
-        By <span>{post.author}</span> | {post.date}
+        By <span>{post.author.name}</span> | {post.date}
       </p>
       <p className={styles.title}>{post.title}</p>
       <p className={styles.description}>{post.description}</p>

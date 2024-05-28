@@ -1,3 +1,4 @@
+import { Author } from "./authors";
 import { Category } from "./categories";
 
 export type BlogPost = {
@@ -8,6 +9,6 @@ export type BlogPost = {
   image: string;
   date: string;
   category: Category;
-  author: string;
-  authorImage: string;
+  tags: string[];
+  author: Author;
 };

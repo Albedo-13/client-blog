@@ -2,7 +2,6 @@ import { AUTHORS } from "./authors";
 import { CATEGORIES } from "./categories";
 import { TAGS } from "./tags";
 
-// TODO: author as array link?
 export const POSTS = [
   {
     id: 1,
@@ -15,9 +14,7 @@ export const POSTS = [
     date: "12.06.2021",
     category: CATEGORIES.Business,
     tags: [TAGS.Experience, TAGS.Business],
-    // author: AUTHORS[0],
-    author: "Floyd Miles",
-    authorImage: "/authors/author-1.webp",
+    author: AUTHORS[0],
   },
   {
     id: 2,
@@ -30,9 +27,7 @@ export const POSTS = [
     date: "07.01.2024",
     category: CATEGORIES.Startup,
     tags: [TAGS.Marketing, TAGS.Business],
-    // author: AUTHORS[2],
-    author: "Jenny Wilson",
-    authorImage: "/authors/author-3.webp",
+    author: AUTHORS[2],
   },
   {
     id: 3,
@@ -45,8 +40,7 @@ export const POSTS = [
     date: "25.02.2023",
     category: CATEGORIES.Technology,
     tags: [TAGS.Business],
-    author: "Floyd Miles",
-    authorImage: "/authors/author-1.webp",
+    author: AUTHORS[0],
   },
   {
     id: 4,
@@ -59,8 +53,7 @@ export const POSTS = [
     date: "25.02.2023",
     category: CATEGORIES.Technology,
     tags: [TAGS.Technology, TAGS.Experience],
-    author: "Leslie Alexander",
-    authorImage: "/authors/author-4.webp",
+    author: AUTHORS[3],
   },
   {
     id: 5,
@@ -73,8 +66,7 @@ export const POSTS = [
     date: "25.02.2023",
     category: CATEGORIES.Startup,
     tags: [TAGS.Screen, TAGS.Marketing],
-    author: "Jenny Wilson",
-    authorImage: "/authors/author-3.webp",
+    author: AUTHORS[3],
   },
   {
     id: 6,
@@ -87,7 +79,6 @@ export const POSTS = [
     date: "25.02.2023",
     category: CATEGORIES.Technology,
     tags: [TAGS.Marketing],
-    author: "Floyd Miles",
-    authorImage: "/authors/author-1.webp",
+    author: AUTHORS[0],
   },
 ];

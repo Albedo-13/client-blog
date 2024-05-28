@@ -17,13 +17,13 @@ export function BlogPostHeader({ post }: BlogPostHeaderProps) {
           <div className={styles.authorWrapper}>
             <Image
               className={styles.authorImage}
-              src={post.authorImage}
+              src={post.author.image}
               width={AVATAR_WIDTH}
               height={AVATAR_HEIGHT}
               alt="author"
             />
             <div>
-              <p className={styles.author}>{post.author}</p>
+              <p className={styles.author}>{post.author.name}</p>
               <p className={styles.creds}>Posted on {post.date}</p>
             </div>
           </div>
