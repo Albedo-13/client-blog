@@ -1,5 +1,8 @@
+import { AUTHORS } from "./authors";
 import { CATEGORIES } from "./categories";
+import { TAGS } from "./tags";
 
+// TODO: author as array link?
 export const POSTS = [
   {
     id: 1,
@@ -10,7 +13,9 @@ export const POSTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
     image: "/images/people-hugging-together.webp",
     date: "12.06.2021",
-    category: CATEGORIES.business,
+    category: CATEGORIES.Business,
+    tags: [TAGS.Experience, TAGS.Business],
+    // author: AUTHORS[0],
     author: "Floyd Miles",
     authorImage: "/authors/author-1.webp",
   },
@@ -23,7 +28,9 @@ export const POSTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
     image: "/images/white-concrete-building.webp",
     date: "07.01.2024",
-    category: CATEGORIES.startup,
+    category: CATEGORIES.Startup,
+    tags: [TAGS.Marketing, TAGS.Business],
+    // author: AUTHORS[2],
     author: "Jenny Wilson",
     authorImage: "/authors/author-3.webp",
   },
@@ -36,7 +43,8 @@ export const POSTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
     image: "/images/people-hugging-together.webp",
     date: "25.02.2023",
-    category: CATEGORIES.technology,
+    category: CATEGORIES.Technology,
+    tags: [TAGS.Business],
     author: "Floyd Miles",
     authorImage: "/authors/author-1.webp",
   },
@@ -49,7 +57,8 @@ export const POSTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
     image: "/images/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook.webp",
     date: "25.02.2023",
-    category: CATEGORIES.technology,
+    category: CATEGORIES.Technology,
+    tags: [TAGS.Technology, TAGS.Experience],
     author: "Leslie Alexander",
     authorImage: "/authors/author-4.webp",
   },
@@ -62,7 +71,8 @@ export const POSTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
     image: "/images/white-concrete-building.webp",
     date: "25.02.2023",
-    category: CATEGORIES.startup,
+    category: CATEGORIES.Startup,
+    tags: [TAGS.Screen, TAGS.Marketing],
     author: "Jenny Wilson",
     authorImage: "/authors/author-3.webp",
   },
@@ -75,7 +85,8 @@ export const POSTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
     image: "/images/people-hugging-together.webp",
     date: "25.02.2023",
-    category: CATEGORIES.technology,
+    category: CATEGORIES.Technology,
+    tags: [TAGS.Marketing],
     author: "Floyd Miles",
     authorImage: "/authors/author-1.webp",
   },

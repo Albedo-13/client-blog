@@ -1,23 +1,23 @@
 export const CATEGORIES = {
-  business: {
+  Business: {
     id: 1,
     label: "Business",
     icon: "/categories/building.svg",
     description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
   },
-  startup: {
+  Startup: {
     id: 2,
     label: "Startup",
     icon: "/categories/shuttle.svg",
     description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
   },
-  economy: {
+  Economy: {
     id: 3,
     label: "Economy",
     icon: "/categories/economy.svg",
     description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
   },
-  technology: {
+  Technology: {
     id: 4,
     label: "Technology",
     icon: "/categories/cyborg.svg",
