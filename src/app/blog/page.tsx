@@ -1,5 +1,3 @@
-import "./blog.module.scss";
-
 import { BlogCards } from "@/components/blog-cards/blog-cards";
 import { BlogHeader } from "@/components/blog-header/blog-header";
 import { ChooseCategory } from "@/components/choose-category/choose-category";
