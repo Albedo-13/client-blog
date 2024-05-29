@@ -1,16 +1,43 @@
 @import "@/styles/variables.scss";
 
 .radio {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  border: 1px solid rgba($gray, 0.3);
+  cursor: pointer;
+
+  &:hover {
+    background-color: $antique-white;
+  }
+
+  &:has(.input:checked) {
+    background-color: $yellow;
+  }
 }
 
 .input {
-  
+  display: none;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: $antique-white;
 }
 
 .image {
-
 }
-.label {
 
+.text {
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.04em;
+  color: $denim;
 }

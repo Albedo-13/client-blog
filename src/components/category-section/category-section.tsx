@@ -1,7 +1,5 @@
 "use client";
 
-// import { usePathname, useSearchParams } from "next/navigation";
-// import { useRouter } from "next/navigation";
 import { ChangeEvent, useEffect, useState } from "react";
 
 import { POSTS_PER_PAGE } from "@/constants/constants";
@@ -66,24 +64,45 @@ export function CategorySection() {
             )}
           </div>
           <div className={styles.filters}>
-            <div className={styles.search}>
-              <input type="text" value={searchText} onChange={handleTextInputChange} placeholder="Search" />
-              <button onClick={filterPosts}>Search</button>
-            </div>
-            {Object.values(CATEGORIES).map((category) => (
-              <RadioButton
-                key={category.id}
-                id={category.id}
-                name={"category"}
-                icon={category.icon}
-                label={category.label}
-                checked={searchParams.get("category") === category.label}
-                onChange={handleCategoryChange}
+            <div className={styles.searchWrapper}>
+              <input
+                type="text"
+                className={styles.searchInput}
+                value={searchText}
+                onChange={handleTextInputChange}
+                placeholder="Search for tag..."
               />
-            ))}
-            {(Object.keys(TAGS) as Array<keyof typeof TAGS>).map((tag) => (
-              <CheckboxButton key={tag} name={"tag"} label={tag} checked={isTagInURL(tag)} onChange={handleTagChange} />
-            ))}
+              <button className={styles.searchButton} onClick={filterPosts}>
+                Search
+              </button>
+            </div>
+            <h3 className={styles.title}>Categories</h3>
+            <div className={styles.categoryWrapper}>
+              {Object.values(CATEGORIES).map((category) => (
+                <RadioButton
+                  key={category.id}
+                  id={category.id.toString()}
+                  name={"category"}
+                  icon={category.icon}
+                  label={category.label}
+                  checked={searchParams.get("category") === category.label}
+                  onChange={handleCategoryChange}
+                />
+              ))}
+            </div>
+            <h3 className={styles.title}>All Tags</h3>
+            <div className={styles.tagWrapper}>
+              {(Object.keys(TAGS) as Array<keyof typeof TAGS>).map((tag) => (
+                <CheckboxButton
+                  key={tag}
+                  id={tag}
+                  name={"tag"}
+                  label={tag}
+                  checked={isTagInURL(tag)}
+                  onChange={handleTagChange}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

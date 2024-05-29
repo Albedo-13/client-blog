@@ -1,11 +1,20 @@
 import Image from "next/image";
+import { ChangeEvent } from "react";
 
 import { ICON_HEIGHT, ICON_WIDTH } from "@/constants/image-sizes";
 
 import styles from "./radios.module.scss";
 
-// TODO: any type
-export default function RadioButton({ id, name, icon, label, checked, onChange }: any) {
+type CheckboxButtonProps = {
+  id: string;
+  name: string;
+  icon: string;
+  label: string;
+  checked: boolean;
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+};
+
+export default function RadioButton({ id, name, icon, label, checked, onChange }: CheckboxButtonProps) {
   return (
     <label className={styles.radio} htmlFor={id}>
       <input
@@ -17,8 +26,10 @@ export default function RadioButton({ id, name, icon, label, checked, onChange }
         checked={checked}
         onChange={onChange}
       />
-      <Image src={icon} className={styles.image} width={ICON_WIDTH} height={ICON_HEIGHT} alt="radio image" />
-      {label}
+      <div className={styles.imageWrapper}>
+        <Image src={icon} className={styles.image} width={ICON_WIDTH} height={ICON_HEIGHT} alt="radio image" />
+      </div>
+      <p className={styles.text}>{label}</p>
     </label>
   );
 }

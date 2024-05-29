@@ -24,3 +24,63 @@
   letter-spacing: -0.06em;
   color: $denim;
 }
+
+.title {
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 36px;
+  margin: 48px 0 24px;
+  color: $denim;
+}
+
+.searchWrapper {
+  display: flex;
+}
+
+.searchInput {
+  padding: 16px 24px;
+  border: 1px solid rgba($gray, 0.3);
+  border-right: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 171%;
+  color: $denim;
+
+  flex-basis: 100%;
+
+  &::placeholder {
+    color: $denim;
+  }
+}
+
+.searchButton {
+  border: none;
+  background-color: $yellow;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-family: $second-family;
+  font-weight: 700;
+  padding: 16px;
+  color: $denim;
+  cursor: pointer;
+
+  &:active {
+    background-color: $yellow-hover;
+  }
+}
+
+.categoryWrapper {
+  & > * {
+    margin-bottom: 24px;
+  }
+}
+
+.tagWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}

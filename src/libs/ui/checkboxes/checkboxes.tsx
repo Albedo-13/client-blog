@@ -1,6 +1,16 @@
+import { ChangeEvent } from "react";
+
 import styles from "./checkboxes.module.scss";
 
-export function CheckboxButton({ id, name, label, checked, onChange }: any) {
+type CheckboxButtonProps = {
+  id: string;
+  name: string;
+  label: string;
+  checked: boolean;
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+};
+
+export function CheckboxButton({ id, name, label, checked, onChange }: CheckboxButtonProps) {
   return (
     <label className={styles.checkbox} htmlFor={id}>
       <input
@@ -12,7 +22,7 @@ export function CheckboxButton({ id, name, label, checked, onChange }: any) {
         value={label}
         onChange={onChange}
       />
-      {label}
+      <p className={styles.text}>{label}</p>
     </label>
   );
 }
