@@ -16,7 +16,7 @@ export function Testimonials() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
             </p>
           </div>
-          <div className={styles.separator} aria-hidden="true"></div>
+          <div className={styles.separatorVertical} aria-hidden="true"></div>
           <div className={styles.carousel}>
             <p className={styles.testimonial}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et

@@ -1,0 +1,46 @@
+@import "@/styles/variables.scss";
+
+.section {
+  margin: 64px 0 32px;
+  color: $white;
+}
+
+.card {
+  padding: 48px 64px;
+  background-color: $purple;
+  display: flex;
+  gap: 40px;
+}
+
+.column {
+  flex-basis: 100%;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 0.6;
+  margin-bottom: 16px;
+  color: $white;
+}
+
+.separator {
+  border: none;
+  border: 1px solid #fff;
+  opacity: 0.1;
+}
+
+.text {
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 12px;
+  color: $white;
+}
+
+.cellar {
+  opacity: 0.6;
+  font-weight: 400;
+  margin-top: 12px;
+  color: $white;
+}

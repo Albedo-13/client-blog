@@ -1,0 +1,29 @@
+@import "@/styles/variables.scss";
+
+.section {
+  margin: 128px 0 64px;
+  text-align: center;
+}
+
+.subtitle {
+  font-weight: 900;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  color: $denim;
+}
+
+.title {
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: -0.04em;
+  margin-top: 16px;
+  color: $denim;
+}
+
+.description {
+  line-height: 175%;
+  color: $gray;
+  max-width: 768px;
+  margin: 18px auto 0;
+}
