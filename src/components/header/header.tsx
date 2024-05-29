@@ -5,7 +5,7 @@ export function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.wrapper}>
-        <Navigation videoVisible={true} />
+        <Navigation videoVisible={true} policyVisible={false} />
       </div>
     </header>
   );

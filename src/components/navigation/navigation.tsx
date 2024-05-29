@@ -6,9 +6,10 @@ import styles from "./navigation.module.scss";
 
 type NavigationProps = {
   videoVisible: boolean;
+  policyVisible: boolean;
 };
 
-export function Navigation({ videoVisible }: NavigationProps) {
+export function Navigation({ videoVisible, policyVisible }: NavigationProps) {
   return (
     <nav className={styles.flex}>
       <Link className={styles.logo} href="/">
@@ -34,6 +35,11 @@ export function Navigation({ videoVisible }: NavigationProps) {
           <li>
             <Link className={styles.link} href="#">
               Contact us
+            </Link>
+          </li>
+          <li className={styles.isVisible} data-visible={policyVisible}>
+            <Link className={styles.link} href="#">
+              Privacy Policy
             </Link>
           </li>
         </ul>

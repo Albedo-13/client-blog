@@ -14,7 +14,7 @@ export function Footer() {
   return (
     <footer className={styles.footer}>
       <div className="container">
-        <Navigation videoVisible={false} />
+        <Navigation videoVisible={false} policyVisible={true} />
         <div className={styles.wrapper}>
           <h2 className={styles.title}>Subscribe to our news letter to get latest updates and news</h2>
           <div className={styles.inputWrapper}>
