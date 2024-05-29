@@ -1,0 +1,14 @@
+@import "@/styles/variables.scss";
+
+.section {
+  margin: 128px 0;
+}
+
+.title {
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: -0.04em;
+  margin-bottom: 32px;
+  color: $denim;
+}
