@@ -1,10 +1,20 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+
+import { Routes } from "@/constants/routes";
 import { POSTS } from "@/data/blog-posts";
 import { PrimaryButton } from "@/libs/ui/buttons/buttons";
 
 import styles from "./home-hero.module.scss";
 
 export function HomeHero() {
+  const router = useRouter();
   const post = POSTS[0];
+
+  const handleRedirectClick = () => {
+    router.push(`/${Routes.BLOG}/${post.id}`);
+  };
 
   return (
     <section className={styles.section}>
@@ -19,7 +29,7 @@ export function HomeHero() {
           </p>
           <p className={styles.description}>{post.description}</p>
 
-          <PrimaryButton>{"Read More >"}</PrimaryButton>
+          <PrimaryButton onClick={handleRedirectClick}>{"Read More >"}</PrimaryButton>
         </div>
       </div>
     </section>

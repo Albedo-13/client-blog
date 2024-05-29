@@ -1,10 +1,9 @@
 export enum Routes {
   HOME = "/",
-  BLOG = "/posts",
-  BLOG_POST = "/posts/:id",
+  BLOG = "/blog",
   ABOUT_US = "/about",
   CATEGORY = "/category",
-  AUTHOR = "/author/:id",
+  AUTHOR = "/author/",
   CONTACT = "/contact",
   PRIVACY_POLICY = "/privacy",
 }
