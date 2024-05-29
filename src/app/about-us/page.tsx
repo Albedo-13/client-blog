@@ -1,6 +1,6 @@
+import { AuthorsList } from "@/components/authors-list/authors-list";
 import { JoinOurTeam } from "@/components/join-our-team/join-our-team";
 import { KnowOurTeam } from "@/components/know-our-team/know-our-team";
-import { ListOfAuthors } from "@/components/list-of-authors/list-of-authors";
 import { MissionVision } from "@/components/mission-vision/mission-vision";
 
 export default function Page() {
@@ -8,7 +8,7 @@ export default function Page() {
     <>
       <MissionVision />
       <KnowOurTeam />
-      <ListOfAuthors />
+      <AuthorsList />
       <JoinOurTeam />
     </>
   );

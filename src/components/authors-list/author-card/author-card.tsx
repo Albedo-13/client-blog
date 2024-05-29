@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { SyntheticEvent } from "react";
 
 import facebookIcon from "/public/socials/facebook.svg";
@@ -9,23 +10,23 @@ import instagramIcon from "/public/socials/instagram.svg";
 import linkedinIcon from "/public/socials/linkedin.svg";
 import twitterIcon from "/public/socials/twitter.svg";
 import { AVATAR_CARD_HEIGHT, AVATAR_CARD_WIDTH, ICON_HEIGHT, ICON_WIDTH } from "@/constants/image-sizes";
+import { Author } from "@/types";
 
 import styles from "./author-card.module.scss";
 
 type AuthorCardProps = {
-  name: string;
-  status: string;
-  image: string;
-  facebook: string;
-  twitter: string;
-  instagram: string;
-  linkedin: string;
+  author: Author;
 };
 
-export function AuthorCard({ name, status, image, facebook, twitter, instagram, linkedin }: AuthorCardProps) {
-  const handleSocialClick = (href: string) => (e: SyntheticEvent) => {
+export function AuthorCard({ author }: AuthorCardProps) {
+  const router = useRouter();
+  const { name, status, image, facebook, twitter, instagram, linkedin } = author;
+
+  const handleSocialClick = (href?: string) => (e: SyntheticEvent) => {
     e.preventDefault();
-    window.open(href, "_blank");
+    if (href) {
+      router.push(href);
+    }
   };
 
   return (

@@ -15,7 +15,7 @@ export default function FeaturedPost() {
   const post = POSTS[0];
 
   const handleRedirectClick = () => {
-    router.push(`/${Routes.BLOG}/${post.id}`);
+    router.push(`${Routes.BLOG}/${post.id}`);
   };
 
   return (
