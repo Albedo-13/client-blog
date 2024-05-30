@@ -1,7 +1,8 @@
-import { BlogPost } from "@/components/blog-post/blog-post";
 import { JoinOurTeam } from "@/components/join-our-team/join-our-team";
-import { OtherPosts } from "@/components/other-posts/other-posts";
 import { POSTS } from "@/data/blog-posts";
+
+import { BlogPost } from "./components/blog-post/blog-post";
+import { OtherPosts } from "./components/other-posts/other-posts";
 
 type PageProps = { params: { post: string } };
 

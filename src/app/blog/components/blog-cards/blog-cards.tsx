@@ -1,6 +1,6 @@
 import { POSTS } from "@/data/blog-posts";
 
-import { PostCard } from "../post-card/post-card";
+import { PostCard } from "../../../../components/post-card/post-card";
 import styles from "./blog-cards.module.scss";
 
 export function BlogCards() {

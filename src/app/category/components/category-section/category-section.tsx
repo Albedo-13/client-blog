@@ -11,7 +11,7 @@ import { CheckboxButton } from "@/libs/ui/checkboxes/checkboxes";
 import RadioButton from "@/libs/ui/radios/radios";
 import { BlogPost } from "@/types";
 
-import { PostCard } from "../post-card/post-card";
+import { PostCard } from "../../../../components/post-card/post-card";
 import styles from "./category-section.module.scss";
 
 export function CategorySection() {
