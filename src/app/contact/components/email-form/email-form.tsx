@@ -1,6 +1,6 @@
 "use client";
 
-import { PrimaryButton } from "@/libs/ui/buttons/buttons";
+import { Button } from "@/libs/ui/buttons/buttons";
 import { InputText, InputTextArea } from "@/libs/ui/inputs/inputs";
 
 import styles from "./email-form.module.scss";
@@ -12,7 +12,7 @@ export function EmailForm() {
         <InputText placeholder={"Full Name"} />
         <InputText placeholder={"Your Email"} />
         <InputTextArea placeholder={"Message"} />
-        <PrimaryButton>Send Message</PrimaryButton>
+        <Button type="primary">Send Message</Button>
       </div>
     </form>
   );

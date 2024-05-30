@@ -1,23 +1,14 @@
 import styles from "./buttons.module.scss";
 
 type ButtonsProps = {
+  type: "primary" | "secondary";
   children: React.ReactNode;
   onClick: VoidFunction;
 };
 
-// TODO: collapse
-
-export function PrimaryButton({ children, onClick }: ButtonsProps) {
+export function Button({ type, children, onClick }: ButtonsProps) {
   return (
-    <button className={`${styles.button} ${styles.primaryButton}`} onClick={onClick}>
-      {children}
-    </button>
-  );
-}
-
-export function SecondaryButton({ children, onClick }: ButtonsProps) {
-  return (
-    <button className={`${styles.button} ${styles.secondaryButton}`} onClick={onClick}>
+    <button className={`${styles.button} ${styles.primaryButton}`} data-type={type} onClick={onClick}>
       {children}
     </button>
   );

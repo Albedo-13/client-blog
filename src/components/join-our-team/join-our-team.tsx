@@ -1,18 +1,13 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-
 import { Routes } from "@/constants/routes";
-import { PrimaryButton } from "@/libs/ui/buttons/buttons";
+import { useRedirect } from "@/hooks/use-redirect";
+import { Button } from "@/libs/ui/buttons/buttons";
 
 import styles from "./join-our-team.module.scss";
 
 export function JoinOurTeam() {
-  const router = useRouter();
-
-  const handleRedirectClick = () => {
-    router.push(Routes.CONTACT);
-  };
+  const { handleRedirectClick } = useRedirect(Routes.CONTACT);
 
   return (
     <section className={styles.section}>
@@ -21,7 +16,9 @@ export function JoinOurTeam() {
         <p className={styles.subtitle}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
         </p>
-        <PrimaryButton onClick={handleRedirectClick}>Join Now</PrimaryButton>
+        <Button type="primary" onClick={handleRedirectClick}>
+          Join Now
+        </Button>
       </div>
     </section>
   );

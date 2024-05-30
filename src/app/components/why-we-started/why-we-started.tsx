@@ -1,20 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 
 import whyStartedImage from "/public/images/people-hugging-together.webp";
 import { Routes } from "@/constants/routes";
-import { PrimaryButton } from "@/libs/ui/buttons/buttons";
+import { useRedirect } from "@/hooks/use-redirect";
+import { Button } from "@/libs/ui/buttons/buttons";
 
 import styles from "./why-we-started.module.scss";
 
 export function WhyWeStarted() {
-  const router = useRouter();
-
-  const handleRedirectClick = () => {
-    router.push(Routes.ABOUT_US);
-  };
+  const { handleRedirectClick } = useRedirect(Routes.ABOUT_US);
 
   return (
     <section className={styles.section}>
@@ -27,7 +23,9 @@ export function WhyWeStarted() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
           </p>
-          <PrimaryButton onClick={handleRedirectClick}>{"Discover our story >"}</PrimaryButton>
+          <Button type="primary" onClick={handleRedirectClick}>
+            {"Discover our story >"}
+          </Button>
         </div>
       </div>
     </section>

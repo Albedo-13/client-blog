@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { Routes } from "@/constants/routes";
-import { SecondaryButton } from "@/libs/ui/buttons/buttons";
+import { Button } from "@/libs/ui/buttons/buttons";
 
 import styles from "./navigation.module.scss";
 
@@ -45,7 +45,7 @@ export function Navigation({ videoVisible, policyVisible }: NavigationProps) {
           </li>
         </ul>
         <div className={styles.isVisible} data-visible={videoVisible}>
-          <SecondaryButton>Video about us</SecondaryButton>
+          <Button type="secondary">Video about us</Button>
         </div>
       </div>
     </nav>

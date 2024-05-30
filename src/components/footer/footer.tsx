@@ -5,7 +5,7 @@ import facebookNegIcon from "/public/socials/facebook-neg.svg";
 import instagramNegIcon from "/public/socials/instagram-neg.svg";
 import linkedinNegIcon from "/public/socials/linkedin-neg.svg";
 import twitterNegIcon from "/public/socials/twitter-neg.svg";
-import { PrimaryButton } from "@/libs/ui/buttons/buttons";
+import { Button } from "@/libs/ui/buttons/buttons";
 
 import { Navigation } from "../navigation/navigation";
 import styles from "./footer.module.scss";
@@ -19,7 +19,7 @@ export function Footer() {
           <h2 className={styles.title}>Subscribe to our news letter to get latest updates and news</h2>
           <div className={styles.inputWrapper}>
             <input className={styles.input} placeholder="Enter Your Email" type="text" />
-            <PrimaryButton>Subscribe</PrimaryButton>
+            <Button type="primary">Subscribe</Button>
           </div>
         </div>
         <address className={styles.address}>

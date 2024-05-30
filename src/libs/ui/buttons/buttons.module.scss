@@ -13,20 +13,20 @@
   &:hover {
     border-radius: 8px;
   }
-}
 
-.primaryButton {
-  background-color: $yellow;
+  &[data-type="primary"] {
+    background-color: $yellow;
 
-  &:hover {
-    background-color: $yellow-hover;
+    &:hover {
+      background-color: $yellow-hover;
+    }
   }
-}
 
-.secondaryButton {
-  background-color: $white;
+  &[data-type="secondary"] {
+    background-color: $white;
 
-  &:hover {
-    background-color: $ghost-white;
+    &:hover {
+      background-color: $ghost-white;
+    }
   }
 }
