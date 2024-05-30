@@ -1,17 +1,17 @@
 export const MAPBOX_POINTS = [
   {
-    name: "Priorbank",
-    address: "Минск, ул. Петра Мстиславца, 13",
+    name: "Office #1",
+    address: "Lithuania, Siauliai 52/3",
     coordinates: [25, 56],
   },
   {
-    name: "Альфабанк",
-    address: "Минск, ул. Красная, 7",
+    name: "Office #2",
+    address: "Saint Petersburg, Volkhov 32",
     coordinates: [32, 60],
   },
   {
-    name: "Альфабанк",
-    address: "Минск, пр-т. Победителей, 108",
+    name: "Office #3",
+    address: "Estinia, Paide 200-1",
     coordinates: [25, 59],
   },
 ];

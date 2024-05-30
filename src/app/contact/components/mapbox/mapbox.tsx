@@ -12,7 +12,7 @@ import { MAPBOX_POINTS } from "@/constants/mapbox-points";
 
 import styles from "./mapbox.module.scss";
 
-const mapboxToken = "pk.eyJ1IjoiYWxiZWRvLTEzIiwiYSI6ImNsdG81czNxODA1cnMybm1oNHlpMWwzbzYifQ.TzBIU653JOAB9ehp-co3pA";
+const mapboxToken = process.env.NEXT_PUBLIC_MAPBOX_API_KEY;
 
 export function Mapbox() {
   const [selectedMarker, setSelectedMarker] = useState<(typeof MAPBOX_POINTS)[0] | null>(null);
