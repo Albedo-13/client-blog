@@ -1,15 +1,15 @@
 @import "@/styles/variables.scss";
 
 .section {
-  margin: 128px auto;
+  margin: $s128 auto;
   text-align: center;
   max-width: 410px;
 }
 
 .title {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 36px;
+  font-weight: $fw700;
+  font-size: $fs36;
   line-height: 133%;
   letter-spacing: -0.06em;
   color: $denim;
@@ -18,5 +18,5 @@
 .subtitle {
   line-height: 175%;
   color: $gray;
-  margin: 16px auto 32px;
+  margin: $s16 auto $s32;
 }

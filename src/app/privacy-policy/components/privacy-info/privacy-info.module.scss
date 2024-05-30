@@ -1,32 +1,32 @@
 @import "@/styles/variables.scss";
 
 .section {
-  margin: 128px auto;
-  max-width: 768px;
+  margin: $s128 auto;
+  max-width: $screen-sm;
 }
 
 .title {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 48px;
+  font-weight: $fw700;
+  font-size: $s48;
   letter-spacing: -0.04em;
-  margin: 32px 0;
+  margin: $s32 0;
   color: $denim;
 }
 
 .text {
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: $fw400;
+  font-size: $fs16;
   line-height: 175%;
-  margin: 24px 0;
+  margin: $s24 0;
   color: $dark-gray;
 }
 
 .subtitle {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 36px;
+  font-weight: $fw700;
+  font-size: $fs36;
   letter-spacing: -0.06em;
-  margin: 24px 0;
+  margin: $s24 0;
   color: $denim;
 }

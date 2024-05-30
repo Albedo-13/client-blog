@@ -11,19 +11,19 @@
 
 .authorWrapper {
   display: flex;
-  gap: 12px;
+  gap: $s12;
 }
 
 .authorImage {
-  width: 48px;
-  height: 48px;
+  width: $s48;
+  height: $s48;
   border-radius: 100%;
 }
 
 .author {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 28px;
+  font-weight: $fw700;
+  font-size: $fs28;
   letter-spacing: -0.04em;
   color: $purple;
 }
@@ -34,23 +34,23 @@
 
 .title {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 48px;
+  font-weight: $fw700;
+  font-size: $fs48;
   letter-spacing: -0.04em;
-  margin-top: 24px;
+  margin-top: $s24;
   color: $denim;
 }
 
 .category {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-top: 34px;
+  gap: $s12;
+  margin-top: $s32;
 }
 
 .categoryText {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 24px;
+  font-weight: $fw700;
+  font-size: $fs24;
   color: $denim;
 }

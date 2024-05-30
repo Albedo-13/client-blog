@@ -6,17 +6,17 @@
 
 .head {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 36px;
+  font-weight: $fw700;
+  font-size: $fs36;
   line-height: 133%;
   letter-spacing: -0.06em;
   color: $denim;
-  margin-bottom: 32px;
+  margin-bottom: $s32;
 }
 
 .card {
   display: block;
-  padding: 32px;
+  padding: $s32;
   cursor: pointer;
 
   &:hover {
@@ -33,8 +33,8 @@
 }
 
 .creds {
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: $fw500;
+  font-size: $fs14;
   color: $dark-gray;
 
   span {
@@ -44,16 +44,16 @@
 
 .title {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 24px;
+  font-weight: $fw700;
+  font-size: $fs24;
   line-height: 133%;
-  margin-top: 12px;
+  margin-top: $s12;
   color: $denim;
 }
 
 .link {
   color: $purple;
   position: absolute;
-  top: 20px;
+  top: $s20;
   right: 0;
 }

@@ -11,14 +11,14 @@
 .popupTitle {
   background-color: $yellow;
   color: $denim;
-  font-weight: 700;
+  font-weight: $fw700;
   font-size: medium;
-  padding: 10px;
+  padding: $s12;
 }
 .popupInfo {
-  font-weight: 400;
-  font-size: 14px;
-  padding: 10px;
+  font-weight: $fw400;
+  font-size: $fs14;
+  padding: $s12;
 }
 .popupLabel {
   font-weight: bold;
@@ -36,6 +36,6 @@
 }
 
 .image {
-  width: 23px;
-  height: 23px;
+  width: $s24;
+  height: $s24;
 }

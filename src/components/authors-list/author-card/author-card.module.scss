@@ -1,7 +1,7 @@
 @import "@/styles/variables.scss";
 
 .card {
-  padding: 40px;
+  padding: $s40;
   background-color: $light-gray;
   text-align: center;
   width: calc(100% / 6);
@@ -23,24 +23,24 @@
 
 .name {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 24px;
+  font-weight: $fw700;
+  font-size: $fs24;
   letter-spacing: -0.04em;
-  margin-top: 20px;
+  margin-top: $s20;
   color: $denim;
 }
 
 .status {
-  font-size: 14px;
-  margin-top: 8px;
+  font-size: $fs14;
+  margin-top: $s8;
   color: $gray;
 }
 
 .socials {
-  margin-top: 20px;
+  margin-top: $s20;
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: $s16;
 
   & > * {
     cursor: pointer;

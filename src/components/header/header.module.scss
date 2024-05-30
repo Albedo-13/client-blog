@@ -1,8 +1,8 @@
 @import "@/styles/variables.scss";
 
 .header {
-  padding: 12px 35px;
-  min-height: 56px;
+  padding: $s12 $s36;
+  min-height: $s56;
   background-color: $denim;
 }
 

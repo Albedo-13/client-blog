@@ -1,8 +1,8 @@
 @import "@/styles/variables.scss";
 
 .card {
-  padding: 32px;
-  border: 1px solid rgba($gray, 0.3);
+  padding: $s32;
+  border: 1px solid rgba($gray, $op3);
   cursor: pointer;
 
   &:hover {
@@ -11,27 +11,27 @@
 }
 
 .imageWrapper {
-  width: 48px;
-  height: 48px;
+  width: $s48;
+  height: $s48;
   background-color: $antique-white;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  border-radius: $s8;
 }
 
 .title {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 28px;
+  font-weight: $fw700;
+  font-size: $fs28;
   line-height: 143%;
   letter-spacing: -0.04em;
   color: $denim;
-  margin-top: 16px;
+  margin-top: $s16;
 }
 
 .description {
   line-height: 175%;
   color: $gray;
-  margin-top: 4px;
+  margin-top: $s4;
 }

@@ -1,13 +1,13 @@
 @import "@/styles/variables.scss";
 
 .section {
-  margin: 128px auto 64px;
+  margin: $s128 auto $s64;
   text-align: center;
-  max-width: 768px;
+  max-width: $screen-sm;
 }
 
 .subtitle {
-  font-weight: 900;
+  font-weight: $fw900;
   letter-spacing: 0.19em;
   text-transform: uppercase;
   color: $denim;
@@ -15,15 +15,15 @@
 
 .title {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 48px;
+  font-weight: $fw700;
+  font-size: $fs48;
   letter-spacing: -0.04em;
-  margin-top: 16px;
+  margin-top: $s16;
   color: $denim;
 }
 
 .description {
   line-height: 175%;
   color: $gray;
-  margin-top: 18px;
+  margin-top: $s20;
 }

@@ -1,7 +1,7 @@
 @import "@/styles/variables.scss";
 
 .logo {
-  font-weight: 700;
+  font-weight: $fw700;
   font-size: $fs24;
   color: $white;
 
@@ -14,12 +14,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
+  gap: $s24;
 }
 
 .navWrapper {
   display: flex;
-  gap: 32px;
+  gap: $s32;
 }
 
 .link {

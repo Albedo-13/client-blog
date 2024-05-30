@@ -1,16 +1,16 @@
 @import "@/styles/variables.scss";
 
 .section {
-  margin: 64px auto 32px;
-  max-width: 768px;
+  margin: $s64 auto $s32;
+  max-width: $screen-sm;
   color: $white;
 }
 
 .card {
-  padding: 48px 64px;
+  padding: $s48 $s64;
   background-color: $purple;
   display: flex;
-  gap: 40px;
+  gap: $s40;
 }
 
 .column {
@@ -18,30 +18,30 @@
 }
 
 .title {
-  font-weight: 400;
-  font-size: 14px;
-  opacity: 0.6;
-  margin-bottom: 16px;
+  font-weight: $fw400;
+  font-size: $fs14;
+  opacity: $op6;
+  margin-bottom: $s16;
   color: $white;
 }
 
 .separator {
   border: none;
-  border: 1px solid #fff;
-  opacity: 0.1;
+  border: 1px solid $white;
+  opacity: $op1;
 }
 
 .text {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 20px;
-  margin-top: 12px;
+  font-weight: $fw700;
+  font-size: $fs20;
+  margin-top: $s12;
   color: $white;
 }
 
 .cellar {
-  opacity: 0.6;
-  font-weight: 400;
-  margin-top: 12px;
+  opacity: $op6;
+  font-weight: $fw400;
+  margin-top: $s12;
   color: $white;
 }

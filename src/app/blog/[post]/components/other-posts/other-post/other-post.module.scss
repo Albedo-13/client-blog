@@ -2,7 +2,7 @@
 
 .card {
   flex-basis: 26%;
-  padding: 32px;
+  padding: $s32;
 
   &:hover {
     background-color: $antique-white;
@@ -21,9 +21,9 @@
 }
 
 .creds {
-  font-weight: 500;
-  font-size: 14px;
-  margin-top: 32px;
+  font-weight: $fw500;
+  font-size: $fs14;
+  margin-top: $s32;
   color: $dark-gray;
 
   span {
@@ -33,15 +33,15 @@
 
 .title {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 28px;
+  font-weight: $fw700;
+  font-size: $fs28;
   letter-spacing: -0.04em;
-  margin-top: 16px;
+  margin-top: $s16;
   color: $denim;
 }
 
 .description {
   line-height: 175%;
-  margin-top: 16px;
+  margin-top: $s16;
   color: $gray;
 }

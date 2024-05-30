@@ -1,7 +1,7 @@
 @import "@/styles/variables.scss";
 
 .wrapper {
-  margin: 64px 0 128px;
+  margin: $s64 0 $s128;
 
   & > * {
     margin: 0;
@@ -11,7 +11,7 @@
 .aboutUsHeader {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: $s32;
   width: 80%;
   position: relative;
   left: 10%;
@@ -20,13 +20,13 @@
 
 .aboutUsHeaderLeft {
   background-color: $white;
-  padding: 64px;
+  padding: $s64;
   flex-basis: 100%;
   z-index: 1;
 }
 
 .subtitle {
-  font-weight: 500;
+  font-weight: $fw500;
   letter-spacing: 0.19em;
   text-transform: uppercase;
   color: $denim;
@@ -34,10 +34,10 @@
 
 .title {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 48px;
+  font-weight: $fw700;
+  font-size: $fs48;
   letter-spacing: -0.04em;
-  margin-top: 16px;
+  margin-top: $s16;
   color: $denim;
 }
 
@@ -62,19 +62,19 @@
 
 .stats {
   display: flex;
-  gap: 68px;
+  gap: calc($s64 + $s4);
   position: absolute;
   background-color: $yellow;
   z-index: 1;
-  bottom: 23px;
+  bottom: $s24;
   left: 20%;
-  padding: 32px 48px;
+  padding: $s32 $s48;
 }
 
 .value {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 56px;
+  font-weight: $fw700;
+  font-size: $fs56;
   letter-spacing: -0.04em;
   color: $denim;
 }

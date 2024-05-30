@@ -2,7 +2,7 @@
 
 .section {
   background-color: $ghost-white;
-  padding: 80px 0;
+  padding: $s80 0;
 }
 
 .wrapper {
@@ -25,7 +25,7 @@
 
 .subtitle {
   font-family: $font-family;
-  font-weight: 500;
+  font-weight: $fw500;
   letter-spacing: 0.19em;
   text-transform: uppercase;
   color: $denim;
@@ -33,19 +33,19 @@
 
 .title {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 36px;
+  font-weight: $fw700;
+  font-size: $fs36;
   line-height: 133%;
   letter-spacing: -0.06em;
-  margin-top: 20px;
+  margin-top: $s20;
   color: $denim;
 }
 
 .creds {
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: $fw500;
+  font-size: $fs14;
   line-height: 143%;
-  margin-top: 16px;
+  margin-top: $s16;
   color: $dark-gray;
 
   span {
@@ -55,6 +55,6 @@
 
 .description {
   line-height: 175%;
-  margin: 16px 0 32px;
+  margin: $s16 0 $s32;
   color: $gray;
 }

@@ -1,7 +1,7 @@
 @import "@/styles/variables.scss";
 
 .section {
-  margin: 128px 0;
+  margin: $s128 0;
 }
 
 .wrapper {
@@ -19,17 +19,17 @@
 
 .notFound {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 36px;
+  font-weight: $fw700;
+  font-size: $s36;
   letter-spacing: -0.06em;
   color: $denim;
 }
 
 .title {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 36px;
-  margin: 48px 0 24px;
+  font-weight: $fw700;
+  font-size: $fs36;
+  margin: $s48 0 $s24;
   color: $denim;
 }
 
@@ -38,15 +38,15 @@
 }
 
 .searchInput {
-  padding: 16px 24px;
-  border: 1px solid rgba($gray, 0.3);
+  padding: $s16 $s24;
+  border: 1px solid rgba($gray, $op3);
   border-right: none;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-top-left-radius: $s8;
+  border-bottom-left-radius: $s8;
 
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: $fw700;
+  font-size: $fs14;
   line-height: 171%;
   color: $denim;
 
@@ -60,11 +60,11 @@
 .searchButton {
   border: none;
   background-color: $yellow;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-top-right-radius: $s8;
+  border-bottom-right-radius: $s8;
   font-family: $second-family;
-  font-weight: 700;
-  padding: 16px;
+  font-weight: $fw700;
+  padding: $s16;
   color: $denim;
   cursor: pointer;
 
@@ -75,12 +75,12 @@
 
 .categoryWrapper {
   & > * {
-    margin-bottom: 24px;
+    margin-bottom: $s24;
   }
 }
 
 .tagWrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: $s16;
 }

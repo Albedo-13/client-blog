@@ -2,23 +2,23 @@
 
 .footer {
   background-color: $denim;
-  padding: 60px 0;
+  padding: $s64 0;
   color: $white;
 }
 
 .title {
   font-family: $second-family;
-  font-size: 36px;
+  font-size: $fs36;
   line-height: 133%;
   letter-spacing: -0.06em;
 }
 
 .input {
   color: $white;
-  padding: 14px 24px;
+  padding: $s16 $s24;
   background-color: transparent;
   border: 1px solid $dark-gray;
-  margin-right: 24px;
+  margin-right: $s24;
 
   &::placeholder {
     color: $gray;
@@ -30,9 +30,9 @@
 }
 
 .wrapper {
-  padding: 80px 64px;
-  background-color: rgba($white, 0.05);
-  margin-top: 50px;
+  padding: $s80 $s64;
+  background-color: rgba($white, $op05);
+  margin-top: $s48;
   display: flex;
   justify-content: space-between;
   & > :first-child {
@@ -45,16 +45,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 48px;
+  margin-top: $s48;
 }
 
 .socials {
   display: flex;
-  gap: 26px;
+  gap: $s28;
 }
 
 .contacts {
   line-height: 175%;
   color: $white;
-  opacity: 0.7;
+  opacity: $op7;
 }

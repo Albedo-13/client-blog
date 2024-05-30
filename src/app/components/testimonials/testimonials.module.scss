@@ -1,18 +1,18 @@
 @import "@/styles/variables.scss";
 
 .section {
-  margin: 128px 0;
+  margin: $s128 0;
 }
 
 .wrapper {
   background-color: $antique-white;
-  padding: 80px 110px;
+  padding: $s80 $s110;
   display: flex;
-  gap: 100px;
+  gap: $s100;
 }
 
 .subtitle {
-  font-weight: 600;
+  font-weight: $fw600;
   letter-spacing: 0.19em;
   text-transform: uppercase;
   color: $denim;
@@ -20,35 +20,35 @@
 
 .title {
   font-family: $second-family;
-  margin-top: 12px;
-  font-weight: 700;
-  font-size: 36px;
+  margin-top: $s12;
+  font-weight: $fw700;
+  font-size: $fs36;
   letter-spacing: -0.06em;
 }
 
 .description {
   line-height: 175%;
-  margin-top: 16px;
+  margin-top: $s16;
   color: $denim;
 }
 
 .separatorVertical {
   min-height: 100%;
-  border-left: 1px solid rgba($gray, 0.4);
+  border-left: 1px solid rgba($gray, $op4);
   position: relative;
 }
 
 .testimonial {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 24px;
+  font-weight: $fw700;
+  font-size: $fs24;
   line-height: 133%;
   color: $denim;
 }
 
 .authorWrapper {
   display: flex;
-  gap: 16px;
+  gap: $s16;
 }
 
 .authorImage {
@@ -57,14 +57,14 @@
 
 .authorName {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 24px;
+  font-weight: $fw700;
+  font-size: $fs24;
   color: $denim;
 }
 
 .authorCity {
   color: $gray;
-  margin-top: 4px;
+  margin-top: $s4;
 }
 
 .carousel {
@@ -75,19 +75,19 @@
 
 .carouselArrows {
   display: flex;
-  gap: 16px;
+  gap: $s16;
   position: absolute;
-  bottom: 80px;
-  right: 110px;
+  bottom: $s80;
+  right: $s110;
 }
 
 .arrow {
   border-radius: 100%;
   background: $white;
-  border: 0px;
-  width: 48px;
-  height: 48px;
-  font-size: 24px;
+  border: 0;
+  width: $s48;
+  height: $s48;
+  font-size: $fs24;
   cursor: pointer;
 
   &:hover {

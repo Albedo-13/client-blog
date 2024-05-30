@@ -11,26 +11,26 @@
 }
 
 .title {
-  margin-top: 24px;
+  margin-top: $s24;
   font-family: $second-family;
-  font-weight: 700;
+  font-weight: $fw700;
   font-size: $fs56;
   letter-spacing: -0.04em;
   max-width: 800px;
 }
 
 .subtitle {
-  font-weight: 500;
+  font-weight: $fw500;
   letter-spacing: 0.19em;
   text-transform: uppercase;
 
   span {
-    font-weight: 900;
+    font-weight: $fw900;
   }
 }
 
 .creds {
-  margin-top: 24px;
+  margin-top: $s24;
 
   span {
     color: $yellow;
@@ -39,7 +39,7 @@
 
 .description {
   max-width: 600px;
-  margin-top: 16px;
+  margin-top: $s16;
   line-height: 175%;
-  margin-bottom: 48px;
+  margin-bottom: $s48;
 }

@@ -3,12 +3,12 @@
 .image {
   width: 100%;
   height: auto;
-  margin-top: 64px;
+  margin-top: $s64;
 }
 
 .container {
   width: 850px;
-  margin: 64px auto 0;
+  margin: $s64 auto 0;
 }
 
 .text {

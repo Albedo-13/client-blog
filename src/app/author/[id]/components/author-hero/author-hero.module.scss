@@ -1,7 +1,7 @@
 @import "@/styles/variables.scss";
 
 .section {
-  padding: 128px 0;
+  padding: $s128 0;
   background-color: $ghost-white;
   position: relative;
 }
@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: $s32;
 }
 
 .wrapperRight {
@@ -19,23 +19,23 @@
 
 .name {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 48px;
+  font-weight: $fw700;
+  font-size: $fs48;
   letter-spacing: -0.04em;
-  margin-top: 20px;
+  margin-top: $s20;
   color: $denim;
 }
 
 .status {
-  font-size: 14px;
-  margin-top: 8px;
+  font-size: $fs14;
+  margin-top: $s8;
   color: $gray;
 }
 
 .socials {
-  margin-top: 20px;
+  margin-top: $s20;
   display: flex;
-  gap: 16px;
+  gap: $s16;
 
   & > * {
     cursor: pointer;
@@ -45,17 +45,17 @@
 .yellowBlock {
   position: absolute;
   right: 0;
-  bottom: 0px;
+  bottom: 0;
   width: 80%;
-  height: 23px;
+  height: $s24;
   background-color: $yellow;
 }
 
 .purpleBlock {
   position: absolute;
   right: 0;
-  bottom: 0px;
+  bottom: 0;
   width: 20%;
-  height: 23px;
+  height: $s24;
   background-color: $purple;
 }

@@ -1,21 +1,21 @@
 @import "@/styles/variables.scss";
 
 .section {
-  padding: 80px 0;
+  padding: $s80 0;
   background-color: $ghost-white;
   text-align: center;
 }
 
 .title {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 48px;
+  font-weight: $fw700;
+  font-size: $fs48;
   letter-spacing: -0.04em;
   color: $denim;
 }
 
 .description {
-  margin-top: 16px;
+  margin-top: $s16;
   color: $denim;
-  opacity: 0.6;
+  opacity: $op6;
 }
