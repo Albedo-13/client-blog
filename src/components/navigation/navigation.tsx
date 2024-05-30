@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { Routes } from "@/constants/routes";
 import { SecondaryButton } from "@/libs/ui/buttons/buttons";
 
 import styles from "./navigation.module.scss";
@@ -18,27 +19,27 @@ export function Navigation({ videoVisible, policyVisible }: NavigationProps) {
       <div className={styles.navWrapper}>
         <ul className={styles.flex}>
           <li>
-            <Link className={styles.link} href="/">
+            <Link className={styles.link} href={Routes.HOME}>
               Home
             </Link>
           </li>
           <li>
-            <Link className={styles.link} href="/blog">
+            <Link className={styles.link} href={Routes.BLOG}>
               Blog
             </Link>
           </li>
           <li>
-            <Link className={styles.link} href="#">
+            <Link className={styles.link} href={Routes.ABOUT_US}>
               About us
             </Link>
           </li>
           <li>
-            <Link className={styles.link} href="#">
+            <Link className={styles.link} href={Routes.CONTACT}>
               Contact us
             </Link>
           </li>
           <li className={styles.isVisible} data-visible={policyVisible}>
-            <Link className={styles.link} href="#">
+            <Link className={styles.link} href={Routes.PRIVACY_POLICY}>
               Privacy Policy
             </Link>
           </li>

@@ -1,6 +1,7 @@
 @import "@/styles/variables.scss";
 
 .card {
+  flex-basis: 26%;
   padding: 32px;
 
   &:hover {
@@ -13,11 +14,10 @@
 }
 
 .image {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
+  margin: 0 auto;
   max-width: 100%;
   max-height: 250px;
-  margin: 0 auto;
 }
 
 .creds {

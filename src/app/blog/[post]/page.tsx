@@ -10,8 +10,12 @@ export default function Page({ params }: PageProps) {
 
   return (
     <>
-      {post && <BlogPost post={post} />}
-      <OtherPosts />
+      {post && (
+        <>
+          <BlogPost post={post} />
+          <OtherPosts category={post.category} />
+        </>
+      )}
       <JoinOurTeam />
     </>
   );
