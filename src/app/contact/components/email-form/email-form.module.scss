@@ -1,4 +1,12 @@
 @import "@/styles/variables.scss";
 
 .form {
+  margin: 32px auto 64px;
+  max-width: 768px;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }

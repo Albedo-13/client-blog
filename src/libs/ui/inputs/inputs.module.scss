@@ -1,1 +1,22 @@
 @import "@/styles/variables.scss";
+
+.input {
+  padding: 30px;
+  color: $denim;
+  border: 1px solid rgba($gray, 0.3);
+
+  &::placeholder {
+    color: $denim;
+  }
+}
+
+.textarea {
+  padding: 30px;
+  color: $denim;
+  border: 1px solid rgba($gray, 0.3);
+  resize: none;
+
+  &::placeholder {
+    color: $denim;
+  }
+}

@@ -1,8 +1,9 @@
 @import "@/styles/variables.scss";
 
 .section {
-  margin: 128px 0 64px;
+  margin: 128px auto 64px;
   text-align: center;
+  max-width: 768px;
 }
 
 .subtitle {
@@ -24,6 +25,5 @@
 .description {
   line-height: 175%;
   color: $gray;
-  max-width: 768px;
-  margin: 18px auto 0;
+  margin-top: 18px;
 }

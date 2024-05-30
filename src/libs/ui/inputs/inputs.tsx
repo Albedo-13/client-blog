@@ -1,13 +1,14 @@
 import styles from "./inputs.module.scss";
 
-export function InputText() {
+// TODO: any
+export function InputText({ placeholder }: any) {
   return (
-    <input />
+    <input className={styles.input} placeholder={placeholder} />
   )
 }
 
-export function InputTextArea() {
+export function InputTextArea({ placeholder }: any) {
   return (
-    <textarea />
+    <textarea className={styles.textarea} placeholder={placeholder} />
   )
 }
