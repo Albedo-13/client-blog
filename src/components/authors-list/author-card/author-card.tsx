@@ -10,6 +10,7 @@ import instagramIcon from "/public/socials/instagram.svg";
 import linkedinIcon from "/public/socials/linkedin.svg";
 import twitterIcon from "/public/socials/twitter.svg";
 import { AVATAR_CARD_HEIGHT, AVATAR_CARD_WIDTH, ICON_HEIGHT, ICON_WIDTH } from "@/constants/image-sizes";
+import { Routes } from "@/constants/routes";
 import { Author } from "@/types";
 
 import styles from "./author-card.module.scss";
@@ -20,7 +21,7 @@ type AuthorCardProps = {
 
 export function AuthorCard({ author }: AuthorCardProps) {
   const router = useRouter();
-  const { name, status, image, facebook, twitter, instagram, linkedin } = author;
+  const { id, name, status, image, facebook, twitter, instagram, linkedin } = author;
 
   const handleSocialClick = (href?: string) => (e: SyntheticEvent) => {
     e.preventDefault();
@@ -30,7 +31,7 @@ export function AuthorCard({ author }: AuthorCardProps) {
   };
 
   return (
-    <Link href="#" className={styles.card}>
+    <Link href={`${Routes.AUTHOR}/${id}`} className={styles.card}>
       <Image
         className={styles.image}
         src={image}

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { ICON_HEIGHT, ICON_WIDTH } from "@/constants/image-sizes";
+import { Routes } from "@/constants/routes";
 
 import styles from "./category-card.module.scss";
 
@@ -13,7 +14,13 @@ type CategoryCardProps = {
 
 export function CategoryCard({ title, description, image }: CategoryCardProps) {
   return (
-    <Link href="#" className={styles.card}>
+    <Link
+      href={{
+        pathname: Routes.CATEGORY,
+        query: { category: title },
+      }}
+      className={styles.card}
+    >
       <div className={styles.imageWrapper}>
         <Image src={image} alt={title} width={ICON_WIDTH} height={ICON_HEIGHT} />
       </div>

@@ -1,11 +1,11 @@
 import { POSTS } from "@/data/blog-posts";
+import { Categories } from "@/types";
 
 import { OtherPost } from "./other-post/other-post";
 import styles from "./other-posts.module.scss";
 
-export function OtherPosts() {
-  // TODO: filter by current post' category
-  const posts = POSTS.slice(0, 3);
+export function OtherPosts({ category }: Categories) {
+  const posts = POSTS.filter((post) => post.category.label === category.label).slice(0, 3);
 
   return (
     <section className={styles.section}>

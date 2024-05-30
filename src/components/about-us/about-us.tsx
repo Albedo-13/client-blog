@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { Routes } from "@/constants/routes";
+
 import styles from "./about-us.module.scss";
 
 export function AboutUs() {
@@ -16,7 +18,7 @@ export function AboutUs() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.
             </p>
-            <Link className={styles.link} href="#">
+            <Link className={styles.link} href={`${Routes.ABOUT_US}`}>
               {"Read More >"}
             </Link>
           </div>
