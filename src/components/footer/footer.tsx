@@ -19,7 +19,7 @@ export function Footer() {
           <h2 className={styles.title}>Subscribe to our news letter to get latest updates and news</h2>
           <div className={styles.inputWrapper}>
             <input className={styles.input} placeholder="Enter Your Email" type="text" />
-            <Button type="primary">Subscribe</Button>
+            <Button type="primary" onClick={() => {}}>Subscribe</Button>
           </div>
         </div>
         <address className={styles.address}>
