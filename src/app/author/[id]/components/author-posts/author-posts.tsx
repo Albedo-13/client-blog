@@ -1,6 +1,6 @@
+import { PostCard } from "@/components/post-card/post-card";
 import { POSTS } from "@/data/blog-posts";
 
-import { PostCard } from "../post-card/post-card";
 import styles from "./author-posts.module.scss";
 
 type AuthorPosts = {
