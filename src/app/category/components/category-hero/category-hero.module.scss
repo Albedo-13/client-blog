@@ -10,12 +10,11 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs56;
-  letter-spacing: -0.04em;
   color: $denim;
 }
 
 .text {
-  line-height: 175%;
+  line-height: $lh175;
   margin-top: $s16;
   max-width: 500px;
   margin: $s16 auto 0;
@@ -24,7 +23,7 @@
 
 .subtitle {
   font-weight: $fw500;
-  letter-spacing: 0.19em;
+  letter-spacing: $ls019;
   text-transform: uppercase;
   margin-top: $s32;
   color: $denim;

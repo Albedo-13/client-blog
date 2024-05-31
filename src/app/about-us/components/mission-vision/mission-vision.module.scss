@@ -27,7 +27,7 @@
 
 .subtitle {
   font-weight: $fw500;
-  letter-spacing: 0.19em;
+  letter-spacing: $ls019;
   text-transform: uppercase;
   color: $denim;
 }
@@ -36,7 +36,6 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs48;
-  letter-spacing: -0.04em;
   margin-top: $s16;
   color: $denim;
 }
@@ -46,7 +45,7 @@
 }
 
 .text {
-  line-height: 175%;
+  line-height: $lh175;
   color: $dark-gray;
 }
 
@@ -75,7 +74,6 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs56;
-  letter-spacing: -0.04em;
   color: $denim;
 }
 

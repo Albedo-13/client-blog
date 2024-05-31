@@ -14,7 +14,8 @@ type CheckboxButtonProps = {
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
 };
 
-export default function RadioButton({ id, name, icon, label, checked, onChange }: CheckboxButtonProps) {
+
+export function RadioButton({ id, name, icon, label, checked, onChange }: CheckboxButtonProps) {
   return (
     <label className={styles.radio} htmlFor={id}>
       <input

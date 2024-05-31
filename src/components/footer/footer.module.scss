@@ -9,8 +9,7 @@
 .title {
   font-family: $second-family;
   font-size: $fs36;
-  line-height: 133%;
-  letter-spacing: -0.06em;
+  line-height: $lh133;
 }
 
 .input {
@@ -54,7 +53,7 @@
 }
 
 .contacts {
-  line-height: 175%;
+  line-height: $lh175;
   color: $white;
   opacity: $op7;
 }

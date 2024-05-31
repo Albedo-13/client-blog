@@ -8,8 +8,7 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs36;
-  line-height: 133%;
-  letter-spacing: -0.06em;
+  line-height: $lh133;
   color: $denim;
   margin-bottom: $s32;
 }
@@ -46,7 +45,7 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs24;
-  line-height: 133%;
+  line-height: $lh133;
   margin-top: $s12;
   color: $denim;
 }

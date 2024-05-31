@@ -4,14 +4,14 @@
   cursor: pointer;
   border: none;
   font-family: $second-family;
-  font-weight: 700;
+  font-weight: $fw700;
   font-size: $fs18;
-  padding: 16px 48px;
-  max-height: 56px;
+  padding: $s16 $s48;
+  min-height: $s56;
   color: $denim;
 
   &:hover {
-    border-radius: 8px;
+    border-radius: $s8;
   }
 
   &[data-type="primary"] {

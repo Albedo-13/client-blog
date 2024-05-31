@@ -10,7 +10,7 @@ import { Button } from "@/libs/ui/buttons/buttons";
 
 import styles from "./featured-post.module.scss";
 
-export default function FeaturedPost() {
+export function FeaturedPost() {
   const post = POSTS[0];
   const { handleRedirectClick } = useRedirect(`${Routes.BLOG}/${post.id}`);
 

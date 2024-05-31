@@ -1,5 +1,5 @@
-import AllPosts from "./all-posts/all-posts";
-import FeaturedPost from "./featured-post/featured-post";
+import { AllPosts } from "./all-posts/all-posts";
+import { FeaturedPost } from "./featured-post/featured-post";
 import styles from "./featured-posts.module.scss";
 
 export function FeaturedPosts() {

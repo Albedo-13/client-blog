@@ -36,9 +36,9 @@
 
 .head {
   font-weight: $fw600;
-  line-height: 125%;
+  line-height: $lh125;
   font-size: $fs16;
-  letter-spacing: 0.19em;
+  letter-spacing: $ls019;
   text-transform: uppercase;
   color: $denim;
 }
@@ -46,7 +46,7 @@
 .title {
   font-weight: $fw700;
   font-size: $fs36;
-  line-height: 133%;
+  line-height: $lh133;
   color: $denim;
   margin-top: $s24;
 }
@@ -55,14 +55,13 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs28;
-  line-height: 143%;
-  letter-spacing: -0.04em;
+  line-height: $lh143;
   color: $denim;
   margin-top: $s24;
 }
 
 .description {
-  line-height: 175%;
+  line-height: $lh175;
   color: $gray;
   margin: $s16 0;
 }
@@ -71,6 +70,6 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs18;
-  line-height: 178%;
+  line-height: $lh175;
   color: $purple;
 }

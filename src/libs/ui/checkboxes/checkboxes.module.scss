@@ -1,16 +1,16 @@
 @import "@/styles/variables.scss";
 
 .checkbox {
-  padding: 16px 20px;
+  padding: $s16 $s20;
   display: flex;
   justify-content: center;
   flex-grow: 1;
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: $fw700;
+  font-size: $fs14;
   color: $gray;
-  border: 2px solid rgba($gray, 0.7);
-  border-radius: 28px;
+  border: 2px solid rgba($gray, $op7);
+  border-radius: $s28;
   cursor: pointer;
 
   &:has(.input:checked) {
@@ -23,6 +23,6 @@
 }
 
 .text {
-  opacity: 0.7;
+  opacity: $op7;
   color: $denim;
 }

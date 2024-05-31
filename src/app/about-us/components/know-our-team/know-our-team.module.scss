@@ -18,7 +18,6 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs36;
-  letter-spacing: -0.06em;
   color: $denim;
 }
 
@@ -31,7 +30,7 @@
 }
 
 .description {
-  line-height: 175%;
+  line-height: $lh175;
   margin-top: $s16;
   color: $denim;
 }

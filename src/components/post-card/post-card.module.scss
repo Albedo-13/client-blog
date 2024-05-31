@@ -26,7 +26,7 @@
 
 .category {
   font-weight: $fw600;
-  letter-spacing: 0.19em;
+  letter-spacing: $ls019;
   text-transform: uppercase;
   color: $purple;
 }
@@ -35,13 +35,12 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs36;
-  letter-spacing: -0.06em;
   margin-top: $s20;
   color: $denim;
 }
 
 .description {
-  line-height: 175%;
+  line-height: $lh175;
   margin-top: $s16;
   color: $gray;
 }

@@ -2,16 +2,16 @@
 
 import { ChangeEvent, useEffect, useState } from "react";
 
+import { PostCard } from "@/components/post-card/post-card";
 import { POSTS_PER_PAGE } from "@/constants/constants";
 import { POSTS } from "@/data/blog-posts";
 import { CATEGORIES } from "@/data/categories";
 import { TAGS } from "@/data/tags";
 import { useRouteChanger } from "@/hooks/use-route-changer";
 import { CheckboxButton } from "@/libs/ui/checkboxes/checkboxes";
-import RadioButton from "@/libs/ui/radios/radios";
+import { RadioButton } from "@/libs/ui/radios/radios";
 import { BlogPost } from "@/types";
 
-import { PostCard } from "../../../../components/post-card/post-card";
 import styles from "./category-section.module.scss";
 
 export function CategorySection() {

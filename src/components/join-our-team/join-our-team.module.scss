@@ -10,13 +10,12 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs36;
-  line-height: 133%;
-  letter-spacing: -0.06em;
+  line-height: $lh133;
   color: $denim;
 }
 
 .subtitle {
-  line-height: 175%;
+  line-height: $lh175;
   color: $gray;
   margin: $s16 auto $s32;
 }

@@ -15,13 +15,12 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs56;
-  letter-spacing: -0.04em;
   max-width: 800px;
 }
 
 .subtitle {
   font-weight: $fw500;
-  letter-spacing: 0.19em;
+  letter-spacing: $ls019;
   text-transform: uppercase;
 
   span {
@@ -40,6 +39,6 @@
 .description {
   max-width: 600px;
   margin-top: $s16;
-  line-height: 175%;
+  line-height: $lh175;
   margin-bottom: $s48;
 }

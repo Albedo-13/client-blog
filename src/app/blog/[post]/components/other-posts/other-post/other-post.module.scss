@@ -1,7 +1,7 @@
 @import "@/styles/variables.scss";
 
 .card {
-  flex-basis: 26%;
+  flex-basis: calc(((100% / 3) - $s64) - ($s32 * 2) / 3);
   padding: $s32;
 
   &:hover {
@@ -35,13 +35,12 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs28;
-  letter-spacing: -0.04em;
   margin-top: $s16;
   color: $denim;
 }
 
 .description {
-  line-height: 175%;
+  line-height: $lh175;
   margin-top: $s16;
   color: $gray;
 }

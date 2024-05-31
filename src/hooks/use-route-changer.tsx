@@ -2,6 +2,7 @@ import { usePathname, useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { ChangeEvent } from "react";
 
+// TODO: rename
 export function useRouteChanger() {
   const searchParams = useSearchParams();
   const pathname = usePathname();

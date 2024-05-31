@@ -12,7 +12,7 @@ export function EmailForm() {
         <InputText placeholder={"Full Name"} />
         <InputText placeholder={"Your Email"} />
         <InputTextArea placeholder={"Message"} />
-        <Button type="primary" onClick={() => {}}>Send Message</Button>
+        <Button type="primary">Send Message</Button>
       </div>
     </form>
   );

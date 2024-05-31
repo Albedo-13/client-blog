@@ -1,9 +1,9 @@
 @import "@/styles/variables.scss";
 
 .input {
-  padding: 30px;
+  padding: $s32;
   color: $denim;
-  border: 1px solid rgba($gray, 0.3);
+  border: 1px solid rgba($gray, $op3);
 
   &::placeholder {
     color: $denim;
@@ -11,9 +11,9 @@
 }
 
 .textarea {
-  padding: 30px;
+  padding: $s32;
   color: $denim;
-  border: 1px solid rgba($gray, 0.3);
+  border: 1px solid rgba($gray, $op3);
   resize: none;
 
   &::placeholder {

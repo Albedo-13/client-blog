@@ -6,7 +6,7 @@ import { POSTS } from "@/data/blog-posts";
 
 import styles from "./all-posts.module.scss";
 
-export default function AllPosts() {
+export function AllPosts() {
   const posts = POSTS.slice(0, POSTS_PER_PAGE);
 
   return (

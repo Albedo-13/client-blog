@@ -10,18 +10,17 @@
 }
 
 .cards {
-  flex-basis: 65%;
+  flex-basis: calc((100% / 3) * 2);
 }
 
 .filters {
-  flex-basis: 25%;
+  flex-basis: calc(100% / 4);
 }
 
 .notFound {
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $s36;
-  letter-spacing: -0.06em;
   color: $denim;
 }
 
@@ -43,13 +42,11 @@
   border-right: none;
   border-top-left-radius: $s8;
   border-bottom-left-radius: $s8;
-
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs14;
-  line-height: 171%;
+  line-height: $lh175;
   color: $denim;
-
   flex-basis: 100%;
 
   &::placeholder {

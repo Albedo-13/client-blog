@@ -11,11 +11,11 @@
 }
 
 .wrapperLeft {
-  flex-basis: 45%;
+  flex-basis: 50%;
 }
 
 .wrapperRight {
-  max-width: 515px;
+  max-width: 500px;
   height: auto;
 
   img {
@@ -26,7 +26,7 @@
 .subtitle {
   font-family: $font-family;
   font-weight: $fw500;
-  letter-spacing: 0.19em;
+  letter-spacing: $ls019;
   text-transform: uppercase;
   color: $denim;
 }
@@ -35,8 +35,7 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs36;
-  line-height: 133%;
-  letter-spacing: -0.06em;
+  line-height: $lh133;
   margin-top: $s20;
   color: $denim;
 }
@@ -44,7 +43,7 @@
 .creds {
   font-weight: $fw500;
   font-size: $fs14;
-  line-height: 143%;
+  line-height: $lh143;
   margin-top: $s16;
   color: $dark-gray;
 
@@ -54,7 +53,7 @@
 }
 
 .description {
-  line-height: 175%;
+  line-height: $lh175;
   margin: $s16 0 $s32;
   color: $gray;
 }

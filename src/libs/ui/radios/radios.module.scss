@@ -3,9 +3,9 @@
 .radio {
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding: 24px;
-  border: 1px solid rgba($gray, 0.3);
+  gap: $s16;
+  padding: $s24;
+  border: 1px solid rgba($gray, $op3);
   cursor: pointer;
 
   &:hover {
@@ -25,9 +25,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 8px;
+  width: $s48;
+  height: $s48;
+  border-radius: $s8;
   background-color: $antique-white;
 }
 
@@ -36,8 +36,7 @@
 
 .text {
   font-family: $second-family;
-  font-weight: 700;
-  font-size: 28px;
-  letter-spacing: -0.04em;
+  font-weight: $fw700;
+  font-size: $fs28;
   color: $denim;
 }

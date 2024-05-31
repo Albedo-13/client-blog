@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 import hugging from "/public/images/people-hugging-together-wide.webp";
+import { AboutUs } from "@/components/about-us/about-us";
 
-import { AboutUs } from "../../../../components/about-us/about-us";
 import styles from "./mission-vision.module.scss";
 
 export function MissionVision() {
