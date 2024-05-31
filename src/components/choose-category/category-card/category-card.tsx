@@ -1,8 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
+import { getLocale } from "next-intl/server";
 
 import { ICON_HEIGHT, ICON_WIDTH } from "@/constants/image-sizes";
 import { Routes } from "@/constants/routes";
+import { Link as LinkI18N } from "@/navigation";
 
 import styles from "./category-card.module.scss";
 
@@ -12,13 +13,16 @@ type CategoryCardProps = {
   image: string;
 };
 
-export function CategoryCard({ title, description, image }: CategoryCardProps) {
+export async function CategoryCard({ title, description, image }: CategoryCardProps) {
+  const locale = await getLocale();
+
   return (
-    <Link
+    <LinkI18N
       href={{
         pathname: Routes.CATEGORY,
         query: { category: title },
       }}
+      locale={locale}
       className={styles.card}
     >
       <div className={styles.imageWrapper}>
@@ -26,6 +30,6 @@ export function CategoryCard({ title, description, image }: CategoryCardProps) {
       </div>
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
-    </Link>
+    </LinkI18N>
   );
 }

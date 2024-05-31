@@ -28,7 +28,6 @@ export default function AuthorHero({ author }: AuthorHeroProps) {
     }
   };
 
-  console.log(author);
   return (
     <section className={styles.section}>
       <div className="container">

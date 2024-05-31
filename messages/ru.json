@@ -1,0 +1,14 @@
+{
+  "Navigation": {
+    "title": "Блог клиентов Modsen",
+    "home": "Главная",
+    "blog": "Блог",
+    "aboutUs": "Про нас",
+    "contactUs": "Контакты",
+    "privacyPolicy": "Политика",
+    "videoAboutUs": "Видео о нас"
+  },
+  "LocaleSwitcher": {
+    "switchLocale": "Русский"
+  }
+}

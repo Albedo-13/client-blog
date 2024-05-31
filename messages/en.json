@@ -1,0 +1,14 @@
+{
+  "Navigation": {
+    "title": "Modsen Client Blog",
+    "home": "Home",
+    "blog": "Blog",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "privacyPolicy": "Privacy Policy",
+    "videoAboutUs": "Video about us"
+  },
+  "LocaleSwitcher": {
+    "switchLocale": "English"
+  }
+}

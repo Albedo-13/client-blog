@@ -1,12 +1,16 @@
 import Link from "next/link";
+import { getLocale } from "next-intl/server";
 
 import { POSTS_PER_PAGE } from "@/constants/constants";
 import { Routes } from "@/constants/routes";
 import { POSTS } from "@/data/blog-posts";
+import { Link as LinkI18N } from "@/navigation";
 
 import styles from "./all-posts.module.scss";
 
-export function AllPosts() {
+export async function AllPosts() {
+  const locale = await getLocale();
+
   const posts = POSTS.slice(0, POSTS_PER_PAGE);
 
   return (
@@ -22,9 +26,9 @@ export function AllPosts() {
           </div>
         </Link>
       ))}
-      <Link className={styles.link} href={`${Routes.BLOG}`}>
+      <LinkI18N href={`${Routes.BLOG}`} className={styles.link} locale={locale}>
         View All
-      </Link>
+      </LinkI18N>
     </section>
   );
 }

@@ -8,9 +8,12 @@ import styles from "./other-post.module.scss";
 
 type OtherPostProps = { post: BlogPost };
 
-export function OtherPost({ post }: OtherPostProps) {
+export  function OtherPost({ post }: OtherPostProps) {
   return (
-    <Link href={`${Routes.BLOG}/${post.id}`} className={styles.card}>
+    <Link
+      href={`${Routes.BLOG}/${post.id}`}
+      className={styles.card}
+    >
       <Image src={post.image} className={styles.image} alt={post.title} width={350} height={250} />
       <p className={styles.creds}>
         By <span>{post.author.name}</span> | {post.date}
