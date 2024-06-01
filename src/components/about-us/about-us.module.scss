@@ -1,7 +1,7 @@
 @import "@/styles/variables.scss";
 
 .section {
-  margin: $s128 0;
+  margin: 0 0 $s128;
   position: relative;
 }
 
@@ -36,7 +36,7 @@
 
 .head {
   font-weight: $fw600;
-  
+
   font-size: $fs16;
   letter-spacing: $ls019;
   text-transform: uppercase;
@@ -46,7 +46,7 @@
 .title {
   font-weight: $fw700;
   font-size: $fs36;
-  
+
   color: $denim;
   margin-top: $s24;
 }
@@ -55,13 +55,12 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs28;
-  
+
   color: $denim;
   margin-top: $s24;
 }
 
 .description {
-  
   color: $gray;
   margin: $s16 0;
 }
@@ -70,6 +69,6 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs18;
-  
+
   color: $purple;
 }

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
 import { SyntheticEvent } from "react";
 
 import facebookIcon from "/public/socials/facebook.svg";
@@ -20,6 +21,7 @@ type AuthorCardProps = {
 };
 
 export function AuthorCard({ author }: AuthorCardProps) {
+  const locale = useLocale();
   const router = useRouter();
   const { id, name, status, image, facebook, twitter, instagram, linkedin } = author;
 
@@ -31,7 +33,7 @@ export function AuthorCard({ author }: AuthorCardProps) {
   };
 
   return (
-    <Link href={`${Routes.AUTHOR}/${id}`} className={styles.card}>
+    <Link href={`${Routes.AUTHOR}/${id}`} locale={locale} className={styles.card}>
       <Image
         className={styles.image}
         src={image}

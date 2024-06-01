@@ -1,10 +1,12 @@
 "use client";
 
-import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 
 import { Routes } from "@/constants/routes";
 import { Button } from "@/libs/ui/buttons/buttons";
+import { Link as LinkI18N } from "@/navigation";
 
+import LocaleSwitcher from "../locale-switcher/locale-switcher";
 import styles from "./navigation.module.scss";
 
 type NavigationProps = {
@@ -13,41 +15,45 @@ type NavigationProps = {
 };
 
 export function Navigation({ videoVisible, policyVisible }: NavigationProps) {
+  const t = useTranslations("Navigation");
+  const locale = useLocale();
+
   return (
     <nav className={styles.flex}>
-      <Link className={styles.logo} href={Routes.HOME}>
-        Modsen Client Blog
-      </Link>
+      <LinkI18N className={styles.logo} href={Routes.HOME} locale={locale}>
+        {t("title")}
+      </LinkI18N>
+      <LocaleSwitcher />
       <div className={styles.navWrapper}>
         <ul className={styles.flex}>
           <li>
-            <Link className={styles.link} href={Routes.HOME}>
-              Home
-            </Link>
+            <LinkI18N className={styles.link} href={Routes.HOME} locale={locale}>
+              {t("home")}
+            </LinkI18N>
           </li>
           <li>
-            <Link className={styles.link} href={Routes.BLOG}>
-              Blog
-            </Link>
+            <LinkI18N className={styles.link} href={Routes.BLOG} locale={locale}>
+              {t("blog")}
+            </LinkI18N>
           </li>
           <li>
-            <Link className={styles.link} href={Routes.ABOUT_US}>
-              About us
-            </Link>
+            <LinkI18N className={styles.link} href={Routes.ABOUT_US} locale={locale}>
+              {t("aboutUs")}
+            </LinkI18N>
           </li>
           <li>
-            <Link className={styles.link} href={Routes.CONTACT}>
-              Contact us
-            </Link>
+            <LinkI18N className={styles.link} href={Routes.CONTACT} locale={locale}>
+              {t("contactUs")}
+            </LinkI18N>
           </li>
           <li className={styles.isVisible} data-visible={policyVisible}>
-            <Link className={styles.link} href={Routes.PRIVACY_POLICY}>
-              Privacy Policy
-            </Link>
+            <LinkI18N className={styles.link} href={Routes.PRIVACY_POLICY} locale={locale}>
+              {t("privacyPolicy")}
+            </LinkI18N>
           </li>
         </ul>
         <div className={styles.isVisible} data-visible={videoVisible}>
-          <Button type="secondary">Video about us</Button>
+          <Button type="secondary">{t("videoAboutUs")}</Button>
         </div>
       </div>
     </nav>
