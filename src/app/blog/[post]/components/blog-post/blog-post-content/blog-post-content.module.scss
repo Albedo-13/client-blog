@@ -1,0 +1,17 @@
+@import "@/styles/variables.scss";
+
+.image {
+  width: 100%;
+  height: auto;
+  margin-top: $s64;
+}
+
+.container {
+  width: 850px;
+  margin: $s64 auto 0;
+}
+
+.text {
+  
+  color: $gray;
+}

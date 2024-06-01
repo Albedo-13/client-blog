@@ -1,0 +1,60 @@
+@import "@/styles/variables.scss";
+
+.section {
+  padding: $s128 0;
+  background-color: $ghost-white;
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $s32;
+}
+
+.wrapperRight {
+  max-width: 500px;
+}
+
+.name {
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs48;
+  margin-top: $s20;
+  color: $denim;
+}
+
+.status {
+  font-size: $fs14;
+  margin-top: $s8;
+  color: $gray;
+}
+
+.socials {
+  margin-top: $s20;
+  display: flex;
+  gap: $s16;
+
+  & > * {
+    cursor: pointer;
+  }
+}
+
+.yellowBlock {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: $s24;
+  background-color: $yellow;
+}
+
+.purpleBlock {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 20%;
+  height: $s24;
+  background-color: $purple;
+}

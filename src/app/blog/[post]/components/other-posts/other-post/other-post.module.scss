@@ -1,0 +1,46 @@
+@import "@/styles/variables.scss";
+
+.card {
+  flex-basis: calc(((100% / 3) - $s64) - ($s32 * 2) / 3);
+  padding: $s32;
+
+  &:hover {
+    background-color: $antique-white;
+  }
+
+  &:active {
+    background-color: $yellow;
+  }
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 250px;
+}
+
+.creds {
+  font-weight: $fw500;
+  font-size: $fs14;
+  margin-top: $s32;
+  color: $dark-gray;
+
+  span {
+    color: $purple;
+  }
+}
+
+.title {
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs28;
+  margin-top: $s16;
+  color: $denim;
+}
+
+.description {
+  
+  margin-top: $s16;
+  color: $gray;
+}

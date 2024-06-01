@@ -1,0 +1,41 @@
+@import "@/styles/variables.scss";
+
+.section {
+  margin: $s128 0;
+}
+
+.image {
+  height: 700px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.card {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: calc(100% / 3);
+  background-color: $white;
+  padding: $s80;
+}
+
+.subtitle {
+  font-weight: $fw600;
+  letter-spacing: $ls019;
+  text-transform: uppercase;
+  color: $denim;
+}
+
+.title {
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs48;
+  margin-top: $s32;
+  color: $denim;
+}
+
+.description {
+  
+  margin: $s16 0 $s32;
+  color: $gray;
+}

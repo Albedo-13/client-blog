@@ -1,0 +1,26 @@
+@import "@/styles/variables.scss";
+
+.section {
+  margin: $s128 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: $s32;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs36;
+  margin-bottom: $s32;
+  color: $black;
+}
+
+.separator {
+  border: none;
+  border-bottom: 1px solid $gray;
+  opacity: $op3;
+}

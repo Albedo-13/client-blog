@@ -1,0 +1,35 @@
+@import "@/styles/variables.scss";
+
+.logo {
+  font-weight: $fw700;
+  font-size: $fs24;
+  color: $white;
+
+  &:hover {
+    color: $gray;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $s24;
+}
+
+.navWrapper {
+  display: flex;
+  gap: $s32;
+}
+
+.link {
+  color: $white;
+
+  &:hover {
+    color: $gray;
+  }
+}
+
+.isVisible[data-visible="false"] {
+  display: none;
+}

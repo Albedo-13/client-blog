@@ -1,0 +1,97 @@
+@import "@/styles/variables.scss";
+
+.section {
+  margin: $s128 0;
+}
+
+.wrapper {
+  background-color: $antique-white;
+  padding: $s80 $s110;
+  display: flex;
+  gap: $s100;
+}
+
+.subtitle {
+  font-weight: $fw600;
+  letter-spacing: $ls019;
+  text-transform: uppercase;
+  color: $denim;
+}
+
+.title {
+  font-family: $second-family;
+  margin-top: $s12;
+  font-weight: $fw700;
+  font-size: $fs36;
+}
+
+.description {
+  
+  margin-top: $s16;
+  color: $denim;
+}
+
+.separatorVertical {
+  min-height: 100%;
+  border-left: 1px solid rgba($gray, $op4);
+  position: relative;
+}
+
+.testimonial {
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs24;
+  
+  color: $denim;
+}
+
+.authorWrapper {
+  display: flex;
+  gap: $s16;
+}
+
+.authorImage {
+  border-radius: 100%;
+}
+
+.authorName {
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs24;
+  color: $denim;
+}
+
+.authorCity {
+  color: $gray;
+  margin-top: $s4;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carouselArrows {
+  display: flex;
+  gap: $s16;
+  position: absolute;
+  bottom: $s80;
+  right: $s110;
+}
+
+.arrow {
+  border-radius: 100%;
+  background: $white;
+  border: 0;
+  width: $s48;
+  height: $s48;
+  font-size: $fs24;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $denim;
+    color: $white;
+    transform: scale(1.1);
+  }
+}

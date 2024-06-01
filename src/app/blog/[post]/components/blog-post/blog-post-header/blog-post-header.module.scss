@@ -1,0 +1,54 @@
+@import "@/styles/variables.scss";
+
+.header {
+  max-width: $screen-sm;
+}
+
+.container {
+  width: 850px;
+  margin: 0 auto;
+}
+
+.authorWrapper {
+  display: flex;
+  gap: $s12;
+}
+
+.authorImage {
+  width: $s48;
+  height: $s48;
+  border-radius: 100%;
+}
+
+.author {
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs28;
+  color: $purple;
+}
+
+.creds {
+  color: $gray;
+}
+
+.title {
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs48;
+  margin-top: $s24;
+  color: $denim;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  gap: $s12;
+  margin-top: $s32;
+}
+
+.categoryText {
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs24;
+  color: $denim;
+}

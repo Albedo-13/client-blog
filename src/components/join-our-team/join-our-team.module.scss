@@ -1,0 +1,21 @@
+@import "@/styles/variables.scss";
+
+.section {
+  margin: $s128 auto;
+  text-align: center;
+  max-width: 410px;
+}
+
+.title {
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs36;
+  
+  color: $denim;
+}
+
+.subtitle {
+  
+  color: $gray;
+  margin: $s16 auto $s32;
+}

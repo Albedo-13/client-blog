@@ -1,0 +1,82 @@
+@import "@/styles/variables.scss";
+
+.wrapper {
+  margin: $s64 0 $s128;
+
+  & > * {
+    margin: 0;
+  }
+}
+
+.aboutUsHeader {
+  display: flex;
+  align-items: center;
+  gap: $s32;
+  width: 80%;
+  position: relative;
+  left: 10%;
+  bottom: -50px;
+}
+
+.aboutUsHeaderLeft {
+  background-color: $white;
+  padding: $s64;
+  flex-basis: 100%;
+  z-index: 1;
+}
+
+.subtitle {
+  font-weight: $fw500;
+  letter-spacing: $ls019;
+  text-transform: uppercase;
+  color: $denim;
+}
+
+.title {
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs48;
+  margin-top: $s16;
+  color: $denim;
+}
+
+.aboutUsHeaderRight {
+  flex-basis: 100%;
+}
+
+.text {
+  
+  color: $dark-gray;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.image {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+.stats {
+  display: flex;
+  gap: calc($s64 + $s4);
+  position: absolute;
+  background-color: $yellow;
+  z-index: 1;
+  bottom: $s24;
+  left: 20%;
+  padding: $s32 $s48;
+}
+
+.value {
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs56;
+  color: $denim;
+}
+
+.description {
+  color: $denim;
+}

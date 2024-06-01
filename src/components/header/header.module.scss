@@ -1,0 +1,12 @@
+@import "@/styles/variables.scss";
+
+.header {
+  padding: $s12 $s36;
+  min-height: $s56;
+  background-color: $denim;
+}
+
+.wrapper {
+  max-width: $screen-xl;
+  margin: 0 auto;
+}

@@ -1,0 +1,58 @@
+@import "@/styles/variables.scss";
+
+.section {
+  position: relative;
+}
+
+.head {
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs36;
+  
+  color: $denim;
+  margin-bottom: $s32;
+}
+
+.card {
+  display: block;
+  padding: $s32;
+  cursor: pointer;
+
+  &:hover {
+    background: $antique-white;
+  }
+
+  &:active {
+    background: $yellow;
+  }
+}
+
+.wrapper {
+  max-width: 400px;
+}
+
+.creds {
+  font-weight: $fw500;
+  font-size: $fs14;
+  color: $dark-gray;
+
+  span {
+    color: $purple;
+  }
+}
+
+.title {
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs24;
+  
+  margin-top: $s12;
+  color: $denim;
+}
+
+.link {
+  color: $purple;
+  position: absolute;
+  top: $s20;
+  right: 0;
+}

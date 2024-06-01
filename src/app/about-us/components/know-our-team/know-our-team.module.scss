@@ -1,0 +1,41 @@
+@import "@/styles/variables.scss";
+
+.section {
+}
+
+.block {
+  margin: $s128 0;
+  display: flex;
+  align-items: center;
+  gap: $s64;
+
+  & > * {
+    flex-basis: 100%;
+  }
+}
+
+.title {
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs36;
+  color: $denim;
+}
+
+.subtitle {
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs24;
+  margin-top: $s16;
+  color: $denim;
+}
+
+.description {
+  
+  margin-top: $s16;
+  color: $denim;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}

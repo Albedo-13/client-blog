@@ -1,0 +1,75 @@
+@import "@/styles/variables.scss";
+
+.section {
+  margin: $s128 0;
+  position: relative;
+}
+
+.wrapper {
+  background-color: $ghost-white;
+  padding: $s80;
+  display: flex;
+  gap: $s64;
+}
+
+.yellowBlock {
+  position: absolute;
+  right: 0;
+  top: -$s24;
+  width: 80%;
+  height: $s24;
+  background-color: $yellow;
+}
+
+.purpleBlock {
+  position: absolute;
+  right: 0;
+  top: -$s24;
+  width: 20%;
+  height: $s24;
+  background-color: $purple;
+}
+
+.wrapperElement {
+  flex-basis: 100%;
+}
+
+.head {
+  font-weight: $fw600;
+  
+  font-size: $fs16;
+  letter-spacing: $ls019;
+  text-transform: uppercase;
+  color: $denim;
+}
+
+.title {
+  font-weight: $fw700;
+  font-size: $fs36;
+  
+  color: $denim;
+  margin-top: $s24;
+}
+
+.content {
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs28;
+  
+  color: $denim;
+  margin-top: $s24;
+}
+
+.description {
+  
+  color: $gray;
+  margin: $s16 0;
+}
+
+.link {
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs18;
+  
+  color: $purple;
+}

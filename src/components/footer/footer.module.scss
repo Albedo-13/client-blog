@@ -1,0 +1,59 @@
+@import "@/styles/variables.scss";
+
+.footer {
+  background-color: $denim;
+  padding: $s64 0;
+  color: $white;
+}
+
+.title {
+  font-family: $second-family;
+  font-size: $fs36;
+  
+}
+
+.input {
+  color: $white;
+  padding: $s16 $s24;
+  background-color: transparent;
+  border: 1px solid $dark-gray;
+  margin-right: $s24;
+
+  &::placeholder {
+    color: $gray;
+  }
+}
+
+.inputWrapper {
+  text-align: right;
+}
+
+.wrapper {
+  padding: $s80 $s64;
+  background-color: rgba($white, $op05);
+  margin-top: $s48;
+  display: flex;
+  justify-content: space-between;
+  & > :first-child {
+    flex-basis: 50%;
+  }
+}
+
+.address {
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: $s48;
+}
+
+.socials {
+  display: flex;
+  gap: $s28;
+}
+
+.contacts {
+  
+  color: $white;
+  opacity: $op7;
+}

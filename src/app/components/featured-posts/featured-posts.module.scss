@@ -1,0 +1,17 @@
+@import "@/styles/variables.scss";
+
+.section {
+  margin: $s128 0;
+}
+
+.wrapper {
+  display: flex;
+  gap: $s32;
+
+  & > :nth-child(1) {
+    flex-basis: calc(100% / 5 * 3);
+  }
+  & > :nth-child(2) {
+    flex-basis: calc(100% / 5 * 2);
+  }
+}

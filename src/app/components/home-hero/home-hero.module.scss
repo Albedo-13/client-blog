@@ -1,0 +1,44 @@
+@import "@/styles/variables.scss";
+
+.section {
+  min-height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $white;
+  background: center / 100% no-repeat
+    url("/images/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook.webp");
+}
+
+.title {
+  margin-top: $s24;
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs56;
+  max-width: 800px;
+}
+
+.subtitle {
+  font-weight: $fw500;
+  letter-spacing: $ls019;
+  text-transform: uppercase;
+
+  span {
+    font-weight: $fw900;
+  }
+}
+
+.creds {
+  margin-top: $s24;
+
+  span {
+    color: $yellow;
+  }
+}
+
+.description {
+  max-width: 600px;
+  margin-top: $s16;
+  
+  margin-bottom: $s48;
+}

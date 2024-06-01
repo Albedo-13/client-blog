@@ -1,0 +1,36 @@
+@import "@/styles/variables.scss";
+
+.card {
+  padding: $s32;
+  border: 1px solid rgba($gray, $op3);
+  cursor: pointer;
+
+  &:hover {
+    background-color: $yellow;
+  }
+}
+
+.imageWrapper {
+  width: $s48;
+  height: $s48;
+  background-color: $antique-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $s8;
+}
+
+.title {
+  font-family: $second-family;
+  font-weight: $fw700;
+  font-size: $fs28;
+  
+  color: $denim;
+  margin-top: $s16;
+}
+
+.description {
+  
+  color: $gray;
+  margin-top: $s4;
+}
