@@ -1,17 +1,20 @@
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
 import image1 from "/public/images/ground-group-growth-hands.webp";
 import image2 from "/public/images/three-persons-sitting-on-the-stairs-talking-with-each-other.webp";
 
 import styles from "./know-our-team.module.scss";
 
-export function KnowOurTeam() {
+export async function KnowOurTeam() {
+  const t = await getTranslations('KnowOurTeam');
+
   return (
     <section className={styles.section}>
       <div className="container">
         <div className={styles.block}>
           <div>
-            <h3 className={styles.title}>Our team of creatives</h3>
+            <h3 className={styles.title}>{t("ourTeam")}</h3>
             <h4 className={styles.subtitle}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
             </h4>
@@ -27,7 +30,7 @@ export function KnowOurTeam() {
         <div className={styles.block}>
           <Image src={image2} className={styles.image} alt="ground group growth hands" />
           <div>
-            <h3 className={styles.title}>Why we started this Blog</h3>
+            <h3 className={styles.title}>{t("whyStarted")}</h3>
             <h4 className={styles.subtitle}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
             </h4>

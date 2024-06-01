@@ -1,4 +1,7 @@
 {
+  "LocaleSwitcher": {
+    "switchLocale": "English"
+  },
   "Navigation": {
     "title": "Modsen Client Blog",
     "home": "Home",
@@ -8,7 +11,41 @@
     "privacyPolicy": "Privacy Policy",
     "videoAboutUs": "Video about us"
   },
-  "LocaleSwitcher": {
-    "switchLocale": "English"
+  "KnowOurTeam": {
+    "ourTeam": "Our team of creatives",
+    "whyStarted": "Why we started this Blog"
+  },
+  "MissionVision": {
+    "aboutUs": "About Us",
+    "sharingTeam": "We are a team of content writers who share their learnings",
+    "blogsPublished": "Blogs Published",
+    "viewsOnFinsweet": "Views on Finsweet",
+    "totalUsers": "Total active Users"
+  },
+  "AuthorHero": {
+    "hello": "Hey there, I’m {name} and welcome to my Blog"
+  },
+  "AuthorPosts": {
+    "posts": "My Posts",
+    "noPosts": "There is no posts..."
+  },
+  "BlogPostHeader": {
+    "postedOn": "Posted on"
+  },
+  "OtherPosts": {
+    "readNext": "What to read next"
+  },
+  "BlogCards": {
+    "allPosts": "All posts",
+    "prev": "< Prev",
+    "next": "Next >"
+  },
+  "BlogHeader": {
+    "postedOn": "posted on {label}",
+    "readMore": "Read More >"
+  },
+  "CategoryHero": {
+    "title": "Categories",
+    "subtitle": "blog > categories"
   }
 }

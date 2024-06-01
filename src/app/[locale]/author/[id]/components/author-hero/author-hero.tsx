@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { SyntheticEvent } from "react";
 
 import facebookIcon from "/public/socials/facebook.svg";
@@ -18,6 +19,7 @@ type AuthorHeroProps = {
 };
 
 export default function AuthorHero({ author }: AuthorHeroProps) {
+  const t = useTranslations("AuthorHero");
   const router = useRouter();
   const { name, status, image, facebook, twitter, instagram, linkedin } = author;
 
@@ -34,7 +36,7 @@ export default function AuthorHero({ author }: AuthorHeroProps) {
         <div className={styles.wrapper}>
           <Image src={image} alt="author image" width={150} height={150} />
           <div className={styles.wrapperRight}>
-            <p className={styles.name}>Hey there, I’m {name} and welcome to my Blog</p>
+            <p className={styles.name}>{t("hello", { name: name })}</p>
             <p className={styles.status}>{status}</p>
             <div className={styles.socials}>
               <div onClick={handleSocialClick(facebook)}>

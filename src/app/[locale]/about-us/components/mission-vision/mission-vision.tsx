@@ -1,18 +1,21 @@
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
 import hugging from "/public/images/people-hugging-together-wide.webp";
 import { AboutUs } from "@/components/about-us/about-us";
 
 import styles from "./mission-vision.module.scss";
 
-export function MissionVision() {
+export async function MissionVision() {
+  const t = await getTranslations("MissionVision");
+
   return (
     <section className="container">
       <div className={styles.wrapper}>
         <div className={styles.aboutUsHeader}>
           <div className={styles.aboutUsHeaderLeft}>
-            <p className={styles.subtitle}>about us</p>
-            <h2 className={styles.title}>We are a team of content writers who share their learnings</h2>
+            <p className={styles.subtitle}>{t("aboutUs")}</p>
+            <h2 className={styles.title}>{t("sharingTeam")}</h2>
           </div>
           <div className={styles.aboutUsHeaderRight}>
             <p className={styles.text}>
@@ -26,15 +29,15 @@ export function MissionVision() {
           <div className={styles.stats}>
             <div>
               <h3 className={styles.value}>12+</h3>
-              <p className={styles.description}>Blogs Published</p>
+              <p className={styles.description}>{t("blogsPublished")}</p>
             </div>
             <div>
               <h3 className={styles.value}>18K+</h3>
-              <p className={styles.description}>Views on Finsweet</p>
+              <p className={styles.description}>{t("viewsOnFinsweet")}</p>
             </div>
             <div>
               <h3 className={styles.value}>30K+</h3>
-              <p className={styles.description}>Total active Users</p>
+              <p className={styles.description}>{t("totalUsers")}</p>
             </div>
           </div>
           <Image src={hugging} className={styles.image} alt="people hugging" />

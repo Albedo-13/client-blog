@@ -1,4 +1,7 @@
 {
+  "LocaleSwitcher": {
+    "switchLocale": "Русский"
+  },
   "Navigation": {
     "title": "Блог клиентов Modsen",
     "home": "Главная",
@@ -8,7 +11,41 @@
     "privacyPolicy": "Политика",
     "videoAboutUs": "Видео о нас"
   },
-  "LocaleSwitcher": {
-    "switchLocale": "Русский"
+  "KnowOurTeam": {
+    "ourTeam": "Наша творческая команда",
+    "whyStarted": "Почему мы завели этот блог"
+  },
+  "MissionVision": {
+    "aboutUs": "Про нас",
+    "sharingTeam": "Мы - команда авторов контента, которые делятся своими знаниями",
+    "blogsPublished": "Опубликованных блогов",
+    "viewsOnFinsweet": "Просмотров на Finsweet",
+    "totalUsers": "Активных пользователей"
+  },
+  "AuthorHero": {
+    "hello": "Привет! Меня зовут {name} и добро пожаловать в мой блог"
+  },
+  "AuthorPosts": {
+    "posts": "Мои посты",
+    "noPosts": "Посты не найдены..."
+  },
+  "BlogPostHeader": {
+    "postedOn": "Опубликовано"
+  },
+  "OtherPosts": {
+    "readNext": "Читайте далее"
+  },
+  "BlogCards": {
+    "allPosts": "Все посты",
+    "prev": "< Назад",
+    "next": "Вперед >"
+  },
+  "BlogHeader": {
+    "postedOn": "Опубликовано в {label}",
+    "readMore": "Читать далее >"
+  },
+  "CategoryHero": {
+    "title": "Категории",
+    "subtitle": "блог > категории"
   }
 }
