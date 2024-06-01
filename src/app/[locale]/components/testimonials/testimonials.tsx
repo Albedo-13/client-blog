@@ -1,17 +1,22 @@
+"use client";
+
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import { TESTIMONIALS } from "@/data/testimonials";
 
 import styles from "./testimonials.module.scss";
 
 export function Testimonials() {
+  const t = useTranslations("Testimonials");
+
   return (
     <section className={styles.section}>
       <div className="container">
         <div className={styles.wrapper}>
           <div>
-            <p className={styles.subtitle}>testimonials</p>
-            <h2 className={styles.title}>What people say about our blog</h2>
+            <p className={styles.subtitle}>{t("testimonials")}</p>
+            <h2 className={styles.title}>{t("title")}</h2>
             <p className={styles.description}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
             </p>

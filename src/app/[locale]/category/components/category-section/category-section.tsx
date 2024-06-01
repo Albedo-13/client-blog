@@ -1,6 +1,7 @@
 "use client";
 
 import { ChangeEvent, useEffect, useState } from "react";
+import { useTranslations } from "use-intl";
 
 import { PostCard } from "@/components/post-card/post-card";
 import { POSTS_PER_PAGE } from "@/constants/constants";
@@ -15,6 +16,7 @@ import { BlogPost } from "@/types";
 import styles from "./category-section.module.scss";
 
 export function CategorySection() {
+  const t = useTranslations("CategorySection");
   const [searchText, setSearchText] = useState("");
   const [filteredPosts, setFilteredPosts] = useState<BlogPost[]>([]);
   const { searchParams, getParam, getParamsList, handleCategoryChange, handleTagChange, isTagInURL } =
@@ -60,7 +62,7 @@ export function CategorySection() {
             {filteredPosts.length ? (
               filteredPosts.map((postData) => <PostCard key={postData.id} {...postData} />)
             ) : (
-              <h3 className={styles.notFound}>Found no posts with this filters...</h3>
+              <h3 className={styles.notFound}>{t("noPosts")}</h3>
             )}
           </div>
           <div className={styles.filters}>
@@ -70,13 +72,13 @@ export function CategorySection() {
                 className={styles.searchInput}
                 value={searchText}
                 onChange={handleTextInputChange}
-                placeholder="Search for tag..."
+                placeholder={t("inputPlaceholder")}
               />
               <button className={styles.searchButton} onClick={filterPosts}>
-                Search
+                {t("search")}
               </button>
             </div>
-            <h3 className={styles.title}>Categories</h3>
+            <h3 className={styles.title}>{t("categories")}</h3>
             <div className={styles.categoryWrapper}>
               {Object.values(CATEGORIES).map((category) => (
                 <RadioButton
@@ -90,7 +92,7 @@ export function CategorySection() {
                 />
               ))}
             </div>
-            <h3 className={styles.title}>All Tags</h3>
+            <h3 className={styles.title}>{t("tags")}</h3>
             <div className={styles.tagWrapper}>
               {(Object.keys(TAGS) as Array<keyof typeof TAGS>).map((tag) => (
                 <CheckboxButton

@@ -1,6 +1,6 @@
 import styles from "./privacy-info.module.scss";
 
-export default function PrivacyInfo() {
+export function PrivacyInfo() {
   return (
     <section className={styles.section}>
       <h2 className={styles.title}>Lorem ipsum dolor sit amet</h2>

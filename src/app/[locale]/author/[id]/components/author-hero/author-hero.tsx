@@ -18,7 +18,7 @@ type AuthorHeroProps = {
   author: Author;
 };
 
-export default function AuthorHero({ author }: AuthorHeroProps) {
+export function AuthorHero({ author }: AuthorHeroProps) {
   const t = useTranslations("AuthorHero");
   const router = useRouter();
   const { name, status, image, facebook, twitter, instagram, linkedin } = author;

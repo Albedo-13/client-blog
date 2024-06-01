@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 import facebookNegIcon from "/public/socials/facebook-neg.svg";
 import instagramNegIcon from "/public/socials/instagram-neg.svg";
@@ -13,15 +14,17 @@ import { Navigation } from "../navigation/navigation";
 import styles from "./footer.module.scss";
 
 export function Footer() {
+  const t = useTranslations("Footer");
+
   return (
     <footer className={styles.footer}>
       <div className="container">
         <Navigation videoVisible={false} policyVisible={true} />
         <div className={styles.wrapper}>
-          <h2 className={styles.title}>Subscribe to our news letter to get latest updates and news</h2>
+          <h2 className={styles.title}>{t("title")}</h2>
           <div className={styles.inputWrapper}>
-            <input className={styles.input} placeholder="Enter Your Email" type="text" />
-            <Button type="primary">Subscribe</Button>
+            <input className={styles.input} placeholder={t("inputPlaceholder")} type="text" />
+            <Button type="primary">{t("button")}</Button>
           </div>
         </div>
         <address className={styles.address}>
