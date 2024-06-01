@@ -11,6 +11,10 @@
   gap: $s100;
 }
 
+.peopleSay {
+  min-width: 25%;
+}
+
 .subtitle {
   font-weight: $fw600;
   letter-spacing: $ls019;
@@ -26,7 +30,6 @@
 }
 
 .description {
-  
   margin-top: $s16;
   color: $denim;
 }
@@ -41,7 +44,7 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs24;
-  
+
   color: $denim;
 }
 
@@ -67,6 +70,16 @@
 }
 
 .carousel {
+  overflow: hidden;
+}
+
+.carouselWrapper {
+  display: flex;
+  height: 100%;
+}
+
+.carouselItem {
+  flex: 0 0 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
