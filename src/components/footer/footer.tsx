@@ -1,9 +1,11 @@
 "use client";
 
+import emailjs from "@emailjs/browser";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { useRef } from "react";
 import { useForm } from "react-hook-form";
 
 import facebookNegIcon from "/public/socials/facebook-neg.svg";
@@ -16,25 +18,46 @@ import { Navigation } from "../navigation/navigation";
 import styles from "./footer.module.scss";
 import { schema } from "./form-schema";
 
+type FormDataType = {
+  email?: string;
+};
+
+const serviceId = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID;
+const publicKey = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;
+const templateId = process.env.NEXT_PUBLIC_EMAIL_FOOTER_TEMPLATE_ID;
+
 export function Footer() {
   const t = useTranslations("Footer");
+  const formRef = useRef<HTMLFormElement>(null);
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
-  } = useForm({
+  } = useForm<FormDataType>({
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data) => {
-    console.log("halo");
+  const sendEmail = (data: FormDataType) => {
+    const emailData = {
+      subscriber: data.email,
+    };
+
+    emailjs.send(serviceId!, templateId!, emailData, publicKey).then(
+      () => {
+        reset();
+      },
+      (error) => {
+        throw new Error(error);
+      }
+    );
   };
 
   return (
-    <footer className={styles.footer} onSubmit={handleSubmit(onSubmit)}>
+    <footer className={styles.footer} onSubmit={handleSubmit(sendEmail)}>
       <div className="container">
         <Navigation videoVisible={false} policyVisible={true} />
-        <form className={styles.wrapper}>
+        <form ref={formRef} className={styles.wrapper}>
           <h2 className={styles.title}>{t("title")}</h2>
           <div className={styles.inputWrapper}>
             <input {...register("email")} className={styles.input} placeholder={t("inputPlaceholder")} type="text" />

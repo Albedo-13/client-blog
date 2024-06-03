@@ -1,5 +1,6 @@
 "use client";
 
+import emailjs from "@emailjs/browser";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
@@ -10,22 +11,46 @@ import styles from "./email-form.module.scss";
 import { schema } from "./form-schema";
 import { InputWithError } from "./input-with-error/input-with-error";
 
+type FormDataType = {
+  fullName?: string;
+  email?: string;
+  message?: string;
+};
+
+const serviceId = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID;
+const publicKey = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;
+const templateId = process.env.NEXT_PUBLIC_EMAIL_CONTACT_TEMPLATE_ID;
+
 export function EmailForm() {
   const t = useTranslations("EmailForm");
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
-  } = useForm({
+  } = useForm<FormDataType>({
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data) => {
-    console.log("halo");
+  const sendEmail = (data: FormDataType) => {
+    const emailData = {
+      fullName: data.fullName,
+      email: data.email,
+      message: data.message,
+    };
+
+    emailjs.send(serviceId!, templateId!, emailData, publicKey).then(
+      () => {
+        reset();
+      },
+      (error) => {
+        throw new Error(error);
+      }
+    );
   };
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+    <form className={styles.form} onSubmit={handleSubmit(sendEmail)}>
       <div className={styles.formWrapper}>
         <InputWithError error={errors.fullName}>
           <input {...register("fullName")} className={styles.input} placeholder={t("fullName")} />
