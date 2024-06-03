@@ -4,11 +4,11 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 
-import { InputWithError } from "@/components/input-with-error/input-with-error";
 import { Button } from "@/libs/ui/buttons/buttons";
 
 import styles from "./email-form.module.scss";
 import { schema } from "./form-schema";
+import { InputWithError } from "./input-with-error/input-with-error";
 
 export function EmailForm() {
   const t = useTranslations("EmailForm");
