@@ -27,7 +27,7 @@ export function BlogHeader() {
             </p>
             <p className={styles.description}>{post.description}</p>
 
-            <Button type="primary" onClick={handleRedirectClick}>
+            <Button variant="primary" onClick={handleRedirectClick}>
               {t("readMore")}
             </Button>
           </div>

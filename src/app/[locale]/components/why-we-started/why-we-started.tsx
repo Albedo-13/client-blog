@@ -25,7 +25,7 @@ export function WhyWeStarted() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
           </p>
-          <Button type="primary" onClick={handleRedirectClick}>
+          <Button variant="primary" onClick={handleRedirectClick}>
             {t("discover")}
           </Button>
         </div>

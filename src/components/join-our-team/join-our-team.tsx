@@ -19,7 +19,7 @@ export function JoinOurTeam() {
         <p className={styles.subtitle}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
         </p>
-        <Button type="primary" onClick={handleRedirectClick}>
+        <Button variant="primary" onClick={handleRedirectClick}>
           {t("button")}
         </Button>
       </div>

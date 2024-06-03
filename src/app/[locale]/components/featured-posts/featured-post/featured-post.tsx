@@ -26,7 +26,7 @@ export function FeaturedPost() {
         </p>
         <p className={styles.title}>{post.title}</p>
         <p className={styles.description}>{post.description}</p>
-        <Button type="primary" onClick={handleRedirectClick}>
+        <Button variant="primary" onClick={handleRedirectClick}>
           {t("readMore")}
         </Button>
       </div>

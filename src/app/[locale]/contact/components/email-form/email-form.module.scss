@@ -8,5 +8,27 @@
 .formWrapper {
   display: flex;
   flex-direction: column;
-  gap: $s16;
+  gap: $s24;
+  position: relative;
+}
+
+.input {
+  padding: $s32;
+  color: $denim;
+  border: 1px solid rgba($gray, $op3);
+
+  &::placeholder {
+    color: $denim;
+  }
+}
+
+.textarea {
+  padding: $s32;
+  color: $denim;
+  border: 1px solid rgba($gray, $op3);
+  resize: none;
+
+  &::placeholder {
+    color: $denim;
+  }
 }

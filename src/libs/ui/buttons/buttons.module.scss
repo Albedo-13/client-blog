@@ -14,7 +14,7 @@
     border-radius: $s8;
   }
 
-  &[data-type="primary"] {
+  &[data-variant="primary"] {
     background-color: $yellow;
 
     &:hover {
@@ -22,7 +22,7 @@
     }
   }
 
-  &[data-type="secondary"] {
+  &[data-variant="secondary"] {
     background-color: $white;
 
     &:hover {

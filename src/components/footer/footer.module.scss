@@ -9,7 +9,6 @@
 .title {
   font-family: $second-family;
   font-size: $fs36;
-  
 }
 
 .input {
@@ -53,7 +52,12 @@
 }
 
 .contacts {
-  
   color: $white;
   opacity: $op7;
+}
+
+.error {
+  position: absolute;
+  color: $red;
+  margin-top: $s4;
 }

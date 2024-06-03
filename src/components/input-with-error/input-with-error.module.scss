@@ -1,0 +1,12 @@
+@import "@/styles/variables.scss";
+
+.inputWrapper {
+  & > * {
+    width: calc(100% - $s64);
+  }
+}
+
+.error {
+  position: absolute;
+  color: $red;
+}

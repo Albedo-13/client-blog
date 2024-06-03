@@ -53,7 +53,7 @@ export function Navigation({ videoVisible, policyVisible }: NavigationProps) {
           </li>
         </ul>
         <div className={styles.isVisible} data-visible={videoVisible}>
-          <Button type="secondary">{t("videoAboutUs")}</Button>
+          <Button variant="secondary">{t("videoAboutUs")}</Button>
         </div>
       </div>
     </nav>
