@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getLocale, getTranslations } from "next-intl/server";
+import { useLocale, useTranslations } from "next-intl";
 
 import { POSTS_PER_PAGE } from "@/constants/constants";
 import { Routes } from "@/constants/routes";
@@ -8,9 +8,9 @@ import { Link as LinkI18N } from "@/navigation";
 
 import styles from "./all-posts.module.scss";
 
-export async function AllPosts() {
-  const t = await getTranslations("AllPosts");
-  const locale = await getLocale();
+export function AllPosts() {
+  const t = useTranslations("AllPosts");
+  const locale = useLocale();
 
   const posts = POSTS.slice(0, POSTS_PER_PAGE);
 

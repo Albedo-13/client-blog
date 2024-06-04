@@ -1,12 +1,14 @@
-import { getTranslations } from "next-intl/server";
+"use client";
+
+import { useTranslations } from "next-intl";
 
 import { AUTHORS } from "@/data/authors";
 
 import { AuthorCard } from "./author-card/author-card";
 import styles from "./authors-list.module.scss";
 
-export async function AuthorsList() {
-  const t = await getTranslations("AuthorsList");
+export function AuthorsList() {
+  const t = useTranslations("AuthorsList");
 
   return (
     <section className={styles.section}>

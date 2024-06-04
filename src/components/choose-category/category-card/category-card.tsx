@@ -1,5 +1,7 @@
+"use client";
+
 import Image from "next/image";
-import { getLocale } from "next-intl/server";
+import { useLocale } from "next-intl";
 
 import { ICON_HEIGHT, ICON_WIDTH } from "@/constants/image-sizes";
 import { Routes } from "@/constants/routes";
@@ -13,8 +15,8 @@ type CategoryCardProps = {
   image: string;
 };
 
-export async function CategoryCard({ title, description, image }: CategoryCardProps) {
-  const locale = await getLocale();
+export function CategoryCard({ title, description, image }: CategoryCardProps) {
+  const locale = useLocale();
 
   return (
     <LinkI18N

@@ -1,12 +1,14 @@
-import { getTranslations } from "next-intl/server";
+"use client";
+
+import { useTranslations } from "next-intl";
 
 import { CATEGORIES } from "@/data/categories";
 
 import { CategoryCard } from "./category-card/category-card";
 import styles from "./choose-category.module.scss";
 
-export async function ChooseCategory() {
-  const t = await getTranslations("ChooseCategory");
+export function ChooseCategory() {
+  const t = useTranslations("ChooseCategory");
 
   return (
     <section className={styles.section}>
