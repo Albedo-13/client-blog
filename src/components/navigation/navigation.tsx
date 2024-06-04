@@ -10,6 +10,7 @@ import { Link as LinkI18N } from "@/navigation";
 import LocaleSwitcher from "../locale-switcher/locale-switcher";
 import { Modal } from "../modal/modal";
 import { ModalPortal } from "../modal/modal-portal";
+import { YoutubePlayer } from "../modal/yt-player/yt-player";
 import styles from "./navigation.module.scss";
 
 type NavigationProps = {
@@ -66,7 +67,7 @@ export function Navigation({ videoVisible, policyVisible }: NavigationProps) {
       {showModal && (
         <ModalPortal>
           <Modal onClose={handleModalClose}>
-            <p>test</p>
+            <YoutubePlayer />
           </Modal>
         </ModalPortal>
       )}
