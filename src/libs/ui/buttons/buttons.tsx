@@ -2,7 +2,7 @@ import styles from "./buttons.module.scss";
 
 type ButtonsProps = {
   variant: "primary" | "secondary";
-  type: "button" | "submit";
+  type?: "button" | "submit";
   children: React.ReactNode;
   onClick?: VoidFunction;
 };

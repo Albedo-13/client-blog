@@ -3,10 +3,13 @@
 import { useLocale, useTranslations } from "next-intl";
 
 import { Routes } from "@/constants/routes";
+import { useModal } from "@/hooks/use-modal";
 import { Button } from "@/libs/ui/buttons/buttons";
 import { Link as LinkI18N } from "@/navigation";
 
 import LocaleSwitcher from "../locale-switcher/locale-switcher";
+import { Modal } from "../modal/modal";
+import { ModalPortal } from "../modal/modal-portal";
 import styles from "./navigation.module.scss";
 
 type NavigationProps = {
@@ -17,7 +20,9 @@ type NavigationProps = {
 export function Navigation({ videoVisible, policyVisible }: NavigationProps) {
   const t = useTranslations("Navigation");
   const locale = useLocale();
+  const { showModal, handleModalShow, handleModalClose, shouldDisableScroll } = useModal();
 
+  shouldDisableScroll(showModal);
   return (
     <nav className={styles.flex}>
       <LinkI18N className={styles.logo} href={Routes.HOME} locale={locale}>
@@ -53,9 +58,18 @@ export function Navigation({ videoVisible, policyVisible }: NavigationProps) {
           </li>
         </ul>
         <div className={styles.isVisible} data-visible={videoVisible}>
-          <Button variant="secondary">{t("videoAboutUs")}</Button>
+          <Button variant="secondary" onClick={handleModalShow}>
+            {t("videoAboutUs")}
+          </Button>
         </div>
       </div>
+      {showModal && (
+        <ModalPortal>
+          <Modal onClose={handleModalClose}>
+            <p>test</p>
+          </Modal>
+        </ModalPortal>
+      )}
     </nav>
   );
 }
