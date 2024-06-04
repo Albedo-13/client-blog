@@ -6,9 +6,8 @@ export function YoutubePlayer() {
     playerVars: {
       autoplay: 1,
       controls: 1,
-      mute: 1,
     },
   };
 
-  return <YouTube videoId="fzcQxRr1cSw" opts={options} />;
+  return <YouTube videoId={process.env.NEXT_PUBLIC_YOUTUBE_VIDEO_ID} opts={options} />;
 }
