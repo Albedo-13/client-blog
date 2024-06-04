@@ -1,6 +1,7 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
+import { useEffect } from "react";
 
 import { Routes } from "@/constants/routes";
 import { useModal } from "@/hooks/use-modal";
@@ -23,7 +24,10 @@ export function Navigation({ videoVisible, policyVisible }: NavigationProps) {
   const locale = useLocale();
   const { showModal, handleModalShow, handleModalClose, shouldDisableScroll } = useModal();
 
-  shouldDisableScroll(showModal);
+  useEffect(() => {
+    shouldDisableScroll(showModal);
+  });
+
   return (
     <nav className={styles.flex}>
       <LinkI18N className={styles.logo} href={Routes.HOME} locale={locale}>
