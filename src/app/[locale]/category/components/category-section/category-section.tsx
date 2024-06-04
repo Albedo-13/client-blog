@@ -8,7 +8,7 @@ import { POSTS_PER_PAGE } from "@/constants/constants";
 import { POSTS } from "@/data/blog-posts";
 import { CATEGORIES } from "@/data/categories";
 import { TAGS } from "@/data/tags";
-import { useRouteChanger } from "@/hooks/use-route-changer";
+import { useCategoryChanger } from "@/hooks/use-category-changer";
 import { CheckboxButton } from "@/libs/ui/checkboxes/checkboxes";
 import { RadioButton } from "@/libs/ui/radios/radios";
 import { BlogPost } from "@/types";
@@ -20,7 +20,7 @@ export function CategorySection() {
   const [searchText, setSearchText] = useState("");
   const [filteredPosts, setFilteredPosts] = useState<BlogPost[]>([]);
   const { searchParams, getParam, getParamsList, handleCategoryChange, handleTagChange, isTagInURL } =
-    useRouteChanger();
+    useCategoryChanger();
 
   useEffect(() => {
     filterPosts();
