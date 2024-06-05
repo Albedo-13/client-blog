@@ -30,7 +30,6 @@
 }
 
 .description {
-  
   margin-top: $s16;
   color: $denim;
 }
@@ -38,4 +37,16 @@
 .image {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: $screen-sm) {
+  .block {
+    margin: $s64 0;
+    gap: $s16;
+    flex-direction: column;
+
+    &:nth-of-type(2) {
+      flex-direction: column-reverse;
+    }
+  }
 }
