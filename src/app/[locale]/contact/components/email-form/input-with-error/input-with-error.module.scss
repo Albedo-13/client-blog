@@ -2,7 +2,7 @@
 
 .inputWrapper {
   & > * {
-    width: calc(100% - $s64);
+    width: calc(100% - $s64 - 2px);
   }
 }
 

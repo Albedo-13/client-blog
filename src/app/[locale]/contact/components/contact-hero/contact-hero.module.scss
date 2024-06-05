@@ -22,7 +22,16 @@
 }
 
 .description {
-  
   color: $gray;
   margin-top: $s20;
+}
+
+@media (max-width: $screen-md) {
+  .section {
+    margin: $s64 auto;
+  }
+
+  .title {
+    font-size: $s32;
+  }
 }

@@ -51,19 +51,21 @@ export function EmailForm() {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit(sendEmail)}>
-      <div className={styles.formWrapper}>
-        <InputWithError error={errors.fullName}>
-          <input {...register("fullName")} className={styles.input} placeholder={t("fullName")} />
-        </InputWithError>
-        <InputWithError error={errors.email}>
-          <input {...register("email")} className={styles.input} placeholder={t("email")} />
-        </InputWithError>
-        <InputWithError error={errors.message}>
-          <textarea {...register("message")} className={styles.textarea} placeholder={t("textArea")} />
-        </InputWithError>
-        <Button type="submit" variant="primary">
-          {t("button")}
-        </Button>
+      <div className="container">
+        <div className={styles.formWrapper}>
+          <InputWithError error={errors.fullName}>
+            <input {...register("fullName")} className={styles.input} placeholder={t("fullName")} />
+          </InputWithError>
+          <InputWithError error={errors.email}>
+            <input {...register("email")} className={styles.input} placeholder={t("email")} />
+          </InputWithError>
+          <InputWithError error={errors.message}>
+            <textarea {...register("message")} className={styles.textarea} placeholder={t("textArea")} />
+          </InputWithError>
+          <Button type="submit" variant="primary">
+            {t("button")}
+          </Button>
+        </div>
       </div>
     </form>
   );
