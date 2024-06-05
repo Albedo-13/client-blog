@@ -8,6 +8,8 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: $s32;
 }
 
 .wrapperLeft {
@@ -20,6 +22,8 @@
 
   img {
     vertical-align: middle;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -35,7 +39,7 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs36;
-  
+
   margin-top: $s20;
   color: $denim;
 }
@@ -43,7 +47,7 @@
 .creds {
   font-weight: $fw500;
   font-size: $fs14;
-  
+
   margin-top: $s16;
   color: $dark-gray;
 
@@ -53,7 +57,13 @@
 }
 
 .description {
-  
   margin: $s16 0 $s32;
   color: $gray;
+}
+
+@media (max-width: $screen-md) {
+  .wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
 }
