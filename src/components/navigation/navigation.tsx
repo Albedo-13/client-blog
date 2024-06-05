@@ -1,5 +1,7 @@
 "use client";
 
+// TODO: change all lib imports, clean local ones
+import { Button } from "@albedo13/client-blog-ui-kit";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
@@ -9,7 +11,6 @@ import burgerImage from "/public/burger-menu.svg";
 import { ICON_HEIGHT, ICON_WIDTH } from "@/constants/image-sizes";
 import { Routes } from "@/constants/routes";
 import { useModal } from "@/hooks/use-modal";
-import { Button } from "@/libs/ui/buttons/buttons";
 import { Link as LinkI18N } from "@/navigation";
 
 import LocaleSwitcher from "../locale-switcher/locale-switcher";
