@@ -14,7 +14,6 @@
 }
 
 .text {
-  
   margin-top: $s16;
   max-width: 500px;
   margin: $s16 auto 0;
@@ -27,4 +26,14 @@
   text-transform: uppercase;
   margin-top: $s32;
   color: $denim;
+}
+
+@media (max-width: $screen-md) {
+  .section {
+    padding: $s32 0;
+  }
+
+  .title {
+    font-size: $s36;
+  }
 }

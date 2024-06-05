@@ -44,7 +44,7 @@
   color: $gray;
 }
 
-@media (max-width: $screen-md) {
+@media (max-width: $screen-lg) {
   .card {
     flex-direction: column;
     text-align: center;
