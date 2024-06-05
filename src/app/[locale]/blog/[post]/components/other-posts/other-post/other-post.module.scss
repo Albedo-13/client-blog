@@ -17,6 +17,7 @@
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  height: auto;
   max-height: 250px;
 }
 
@@ -40,7 +41,17 @@
 }
 
 .description {
-  
   margin-top: $s16;
   color: $gray;
+}
+
+@media (max-width: $screen-md) {
+  .card {
+    padding: $s16;
+    border: 1px solid rgba($gray, $op3);
+  }
+
+  .image {
+    border-radius: $s8;
+  }
 }
