@@ -58,3 +58,28 @@
   height: $s24;
   background-color: $purple;
 }
+
+@media (max-width: $screen-md) {
+  .section {
+    padding: $s48 0 $s64;
+  }
+
+  .name {
+    font-size: $fs36;
+  }
+}
+
+@media (max-width: $screen-xs) {
+  .wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .name {
+    margin: 0;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}

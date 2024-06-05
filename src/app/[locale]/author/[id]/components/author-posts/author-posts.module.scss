@@ -11,3 +11,13 @@
   margin-bottom: $s32;
   color: $denim;
 }
+
+@media (max-width: $screen-md) {
+  .section {
+    margin: $s64 0;
+  }
+
+  .title {
+    font-size: $fs36;
+  }
+}
