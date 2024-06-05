@@ -18,3 +18,13 @@
   color: $denim;
   opacity: $op6;
 }
+
+@media (max-width: $screen-md) {
+  .section {
+    padding: $s40 0;
+  }
+
+  .title {
+    font-size: $fs36;
+  }
+}
