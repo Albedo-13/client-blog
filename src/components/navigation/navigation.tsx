@@ -1,8 +1,12 @@
 "use client";
 
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
+import burgerImage from "/public/burger-menu.svg";
+import { ICON_HEIGHT, ICON_WIDTH } from "@/constants/image-sizes";
 import { Routes } from "@/constants/routes";
 import { useModal } from "@/hooks/use-modal";
 import { Button } from "@/libs/ui/buttons/buttons";
@@ -23,18 +27,31 @@ export function Navigation({ videoVisible, policyVisible }: NavigationProps) {
   const t = useTranslations("Navigation");
   const locale = useLocale();
   const { showModal, handleModalShow, handleModalClose, shouldDisableScroll } = useModal();
+  const [isNavigationOpen, setIsNavigationOpen] = useState(false);
+  const pathname = usePathname();
+
+  const handleNavigationToggle = () => {
+    setIsNavigationOpen(!isNavigationOpen);
+    shouldDisableScroll(!isNavigationOpen);
+  };
 
   useEffect(() => {
-    shouldDisableScroll(showModal);
-  });
+    if (!isNavigationOpen) {
+      shouldDisableScroll(showModal);
+    }
+  }, [showModal]);
+
+  useEffect(() => {
+    setIsNavigationOpen(false);
+    shouldDisableScroll(false);
+  }, [locale, pathname]);
 
   return (
     <nav className={styles.flex}>
       <LinkI18N className={styles.logo} href={Routes.HOME} locale={locale}>
         {t("title")}
       </LinkI18N>
-      <LocaleSwitcher />
-      <div className={styles.navWrapper}>
+      <div className={styles.navWrapper} data-visible={isNavigationOpen}>
         <ul className={styles.flex}>
           <li>
             <LinkI18N className={styles.link} href={Routes.HOME} locale={locale}>
@@ -67,7 +84,11 @@ export function Navigation({ videoVisible, policyVisible }: NavigationProps) {
             {t("videoAboutUs")}
           </Button>
         </div>
+        <LocaleSwitcher />
       </div>
+      <button className={styles.burger} onClick={handleNavigationToggle}>
+        <Image src={burgerImage} alt="navigation menu" width={ICON_WIDTH} height={ICON_HEIGHT} />
+      </button>
       {showModal && (
         <ModalPortal>
           <Modal onClose={handleModalClose}>

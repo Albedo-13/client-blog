@@ -16,7 +16,6 @@
   padding: $s16 $s24;
   background-color: transparent;
   border: 1px solid $dark-gray;
-  margin-right: $s24;
 
   &::placeholder {
     color: $gray;
@@ -25,6 +24,8 @@
 
 .inputWrapper {
   text-align: right;
+  display: flex;
+  gap: $s24;
 }
 
 .wrapper {
@@ -32,7 +33,11 @@
   background-color: rgba($white, $op05);
   margin-top: $s48;
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
+  position: relative;
+  gap: $s32;
+
   & > :first-child {
     flex-basis: 50%;
   }
@@ -58,6 +63,37 @@
 
 .error {
   position: absolute;
+  transform: translateY(300%);
   color: $red;
   margin-top: $s4;
+}
+
+@media (max-width: $screen-lg) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .section {
+    margin: $s64 auto;
+  }
+
+  .wrapper {
+    padding: $s32;
+  }
+
+  .title {
+    font-size: $fs28;
+  }
+
+  .address {
+    flex-direction: column;
+    gap: $s16;
+  }
+
+  .inputWrapper {
+    flex-direction: column;
+  }
 }

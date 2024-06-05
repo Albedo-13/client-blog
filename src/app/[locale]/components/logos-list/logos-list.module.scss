@@ -37,3 +37,9 @@
   width: auto;
   height: $s32;
 }
+
+@media (max-width: $screen-sm) {
+  .section {
+    margin: $s64 0;
+  }
+}

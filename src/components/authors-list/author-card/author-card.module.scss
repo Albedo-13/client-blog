@@ -45,3 +45,15 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: $screen-lg) {
+  .card {
+    width: calc(100% / 4);
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .card {
+    width: calc(100% / 3);
+  }
+}

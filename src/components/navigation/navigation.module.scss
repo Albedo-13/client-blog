@@ -33,3 +33,41 @@
 .isVisible[data-visible="false"] {
   display: none;
 }
+
+.burger {
+  display: none;
+}
+
+@media (max-width: $screen-md) {
+  .burger {
+    display: block;
+    z-index: $layer-3;
+  }
+
+  .navWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: $layer-2;
+    background-color: $denim;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    &[data-visible="false"] {
+      display: none;
+    }
+
+    & > * {
+      max-width: 200px;
+      text-align: center;
+    }
+
+    .flex {
+      flex-direction: column;
+    }
+  }
+}
