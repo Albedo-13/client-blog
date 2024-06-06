@@ -19,6 +19,7 @@
   width: 80%;
   height: $s24;
   background-color: $yellow;
+  margin-right: $s20;
 }
 
 .purpleBlock {
@@ -28,6 +29,7 @@
   width: 20%;
   height: $s24;
   background-color: $purple;
+  margin-right: $s20;
 }
 
 .wrapperElement {
@@ -71,4 +73,24 @@
   font-size: $fs18;
 
   color: $purple;
+}
+
+@media (max-width: $screen-md) {
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .section {
+    margin: 0 0 $s64;
+  }
+
+  .wrapper {
+    padding: $s24;
+  }
+
+  .title {
+    font-size: $fs28;
+  }
 }

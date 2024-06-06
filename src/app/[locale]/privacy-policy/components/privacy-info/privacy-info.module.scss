@@ -2,7 +2,6 @@
 
 .section {
   margin: $s128 auto;
-  max-width: $screen-sm;
 }
 
 .title {
@@ -16,7 +15,7 @@
 .text {
   font-weight: $fw400;
   font-size: $fs16;
-  
+
   margin: $s24 0;
   color: $dark-gray;
 }
@@ -27,4 +26,14 @@
   font-size: $fs36;
   margin: $s24 0;
   color: $denim;
+}
+
+@media (max-width: $screen-md) {
+  .section {
+    margin: $s64 auto;
+  }
+
+  .title {
+    font-size: $fs36;
+  }
 }

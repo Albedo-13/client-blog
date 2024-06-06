@@ -5,7 +5,7 @@
 }
 
 .image {
-  height: 700px;
+  max-height: 700px;
   width: auto;
   vertical-align: middle;
 }
@@ -35,7 +35,43 @@
 }
 
 .description {
-  
   margin: $s16 0 $s32;
   color: $gray;
+}
+
+@media (max-width: $screen-lg) {
+  .image {
+    max-height: auto;
+    width: 100%;
+  }
+
+  .card {
+    padding: $s32;
+    top: 0;
+    bottom: auto;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .section {
+    margin: $s64 0;
+  }
+
+  .title {
+    font-size: $fs28;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    position: static;
+    transform: translate(0);
+    width: auto;
+  }
 }

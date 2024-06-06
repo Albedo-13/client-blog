@@ -1,0 +1,64 @@
+@import "@/styles/variables.scss";
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($gray, $op7);
+  backdrop-filter: blur(6px);
+  z-index: $layer-3;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.modal {
+  background-color: $white;
+  width: 640px;
+  height: 360px;
+  border: 3px solid $gray;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: $s40 $s16 $s32 $s12;
+  border-radius: calc($s8 - 2px);
+
+  &-input {
+    border: none;
+    min-height: $s36;
+    max-width: calc(100% - $s16);
+    padding: 0 $s8;
+    font-size: $fs28;
+
+    &_readonly {
+      color: $gray;
+      outline: none;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  &-label {
+    display: block;
+    font-weight: $fw600;
+    margin-top: $s12;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 0px;
+  right: 7px;
+  font-size: $fs36;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

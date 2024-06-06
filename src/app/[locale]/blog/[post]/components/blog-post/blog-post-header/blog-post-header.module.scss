@@ -1,14 +1,5 @@
 @import "@/styles/variables.scss";
 
-.header {
-  max-width: $screen-sm;
-}
-
-.container {
-  width: 850px;
-  margin: 0 auto;
-}
-
 .authorWrapper {
   display: flex;
   gap: $s12;
@@ -51,4 +42,10 @@
   font-weight: $fw700;
   font-size: $fs24;
   color: $denim;
+}
+
+@media (max-width: $screen-md) {
+  .title {
+    font-size: $fs36;
+  }
 }

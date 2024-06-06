@@ -9,7 +9,7 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs36;
-  
+
   color: $denim;
   margin-bottom: $s32;
 }
@@ -29,19 +29,19 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs28;
-  
+
   margin-top: $s16;
   color: $denim;
 }
 
 .description {
-  
   margin: $s16 0 $s32;
   color: $gray;
 }
 
 .image {
-  max-height: 350px;
-  width: auto;
+  display: block;
+  height: auto;
   max-width: 100%;
+  margin: 0 auto;
 }

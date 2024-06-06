@@ -3,3 +3,9 @@
 .section {
   margin: $s128 0;
 }
+
+@media (max-width: $screen-md) {
+  .section {
+    margin: $s64 0;
+  }
+}

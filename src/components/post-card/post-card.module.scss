@@ -40,7 +40,31 @@
 }
 
 .description {
-  
   margin-top: $s16;
   color: $gray;
+}
+
+@media (max-width: $screen-lg) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid rgba($gray, $op3);
+    margin-bottom: $s16;
+  }
+
+  .image {
+    border-radius: $s8;
+    max-width: 500px;
+    width: 100%;
+  }
+}
+
+@media (max-width: $screen-xs) {
+  .card {
+    padding: $s16;
+  }
+
+  .title {
+    font-size: $fs28;
+  }
 }

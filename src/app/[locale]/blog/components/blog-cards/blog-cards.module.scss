@@ -50,3 +50,9 @@
     font-size: $s28;
   }
 }
+
+@media (max-width: $screen-md) {
+  .title {
+    font-size: $s36;
+  }
+}

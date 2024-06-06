@@ -8,7 +8,7 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs36;
-  
+
   color: $denim;
   text-align: center;
 }
@@ -18,4 +18,16 @@
   display: flex;
   justify-content: space-between;
   gap: $s32;
+}
+
+@media (max-width: $screen-lg) {
+  .cards {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .section {
+    margin: $s64 0;
+  }
 }

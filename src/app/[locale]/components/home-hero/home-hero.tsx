@@ -1,11 +1,11 @@
 "use client";
 
+import { Button } from "@albedo13/client-blog-ui-kit";
 import { useTranslations } from "next-intl";
 
 import { Routes } from "@/constants/routes";
 import { POSTS } from "@/data/blog-posts";
 import { useRedirect } from "@/hooks/use-redirect";
-import { Button } from "@/libs/ui/buttons/buttons";
 
 import styles from "./home-hero.module.scss";
 
@@ -18,16 +18,14 @@ export function HomeHero() {
     <section className={styles.section}>
       <div>
         <div className="container">
-          <p className={styles.subtitle}>
-            {t("postedOn")} <span>{post.category.label}</span>
-          </p>
+          <p className={styles.subtitle}>{t("postedOn", { category: post.category.label })}</p>
           <h1 className={styles.title}>{post.title}</h1>
           <p className={styles.creds}>
             By <span>{post.author.name}</span> | {post.date}
           </p>
           <p className={styles.description}>{post.description}</p>
 
-          <Button type="primary" onClick={handleRedirectClick}>
+          <Button variant="primary" onClick={handleRedirectClick}>
             {t("readMore")}
           </Button>
         </div>

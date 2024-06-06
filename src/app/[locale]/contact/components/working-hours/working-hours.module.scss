@@ -45,3 +45,12 @@
   margin-top: $s12;
   color: $white;
 }
+
+@media (max-width: $screen-sm) {
+  .card {
+    padding: $s24 $s32;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

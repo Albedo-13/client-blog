@@ -1,12 +1,14 @@
+"use client";
+
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
 import { LOGOS } from "@/data/logos";
 
 import styles from "./logos-list.module.scss";
 
-export async function LogosList() {
-  const t = await getTranslations("LogosList");
+export function LogosList() {
+  const t = useTranslations("LogosList");
 
   return (
     <section className={styles.section}>

@@ -27,7 +27,7 @@
     "noPosts": "There is no posts..."
   },
   "BlogPostHeader": {
-    "postedOn": "Posted on"
+    "postedOn": "Posted on {date}"
   },
   "OtherPosts": {
     "readNext": "What to read next"
@@ -62,7 +62,7 @@
   },
   "HomeHero": {
     "readMore": "Read More >",
-    "postedOn": "Posted on"
+    "postedOn": "Posted on {category}"
   },
   "LogosList": {
     "weAre": "We are",

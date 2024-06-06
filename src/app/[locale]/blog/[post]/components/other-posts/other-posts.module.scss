@@ -24,3 +24,14 @@
   border-bottom: 1px solid $gray;
   opacity: $op3;
 }
+
+@media (max-width: $screen-md) {
+  .section {
+    margin: $s64 0;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    gap: $s16;
+  }
+}

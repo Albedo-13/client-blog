@@ -1,13 +1,15 @@
-import { getLocale, getTranslations } from "next-intl/server";
+"use client";
+
+import { useLocale, useTranslations } from "next-intl";
 
 import { Routes } from "@/constants/routes";
 import { Link as LinkI18N } from "@/navigation";
 
 import styles from "./about-us.module.scss";
 
-export async function AboutUs() {
-  const t = await getTranslations("AboutUs");
-  const locale = await getLocale();
+export function AboutUs() {
+  const t = useTranslations("AboutUs");
+  const locale = useLocale();
 
   return (
     <section className={styles.section}>

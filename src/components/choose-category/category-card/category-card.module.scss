@@ -24,13 +24,24 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs28;
-  
+
   color: $denim;
   margin-top: $s16;
 }
 
 .description {
-  
   color: $gray;
   margin-top: $s4;
+}
+
+@media (max-width: $screen-lg) {
+  .card {
+    text-align: center;
+    flex-grow: 1;
+    width: calc(100% / 3);
+  }
+
+  .imageWrapper {
+    margin: 0 auto;
+  }
 }

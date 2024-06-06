@@ -11,10 +11,8 @@ type BlogPostContentProps = {
 export function BlogPostContent({ post }: BlogPostContentProps) {
   return (
     <div>
-      <div className="container">
-        <Image src={post.image} className={styles.image} alt="blog post content" width={1280} height={900} />
-      </div>
-      <div className={styles.container}>
+      <Image src={post.image} className={styles.image} alt="blog post content" width={1280} height={900} />
+      <div className={styles.content}>
         <div className={styles.text}>{post.content}</div>
       </div>
     </div>

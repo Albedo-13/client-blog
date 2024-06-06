@@ -11,6 +11,10 @@
   gap: $s100;
 }
 
+.peopleSay {
+  min-width: 25%;
+}
+
 .subtitle {
   font-weight: $fw600;
   letter-spacing: $ls019;
@@ -26,7 +30,6 @@
 }
 
 .description {
-  
   margin-top: $s16;
   color: $denim;
 }
@@ -41,7 +44,7 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs24;
-  
+
   color: $denim;
 }
 
@@ -67,6 +70,16 @@
 }
 
 .carousel {
+  overflow: hidden;
+}
+
+.carouselWrapper {
+  display: flex;
+  height: 100%;
+}
+
+.carouselItem {
+  flex: 0 0 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -76,7 +89,7 @@
   display: flex;
   gap: $s16;
   position: absolute;
-  bottom: $s80;
+  bottom: $s24;
   right: $s110;
 }
 
@@ -93,5 +106,33 @@
     background-color: $denim;
     color: $white;
     transform: scale(1.1);
+  }
+}
+
+@media (max-width: $screen-lg) {
+  .wrapper {
+    gap: $s32;
+  }
+}
+
+@media (max-width: $screen-md) {
+  .wrapper {
+    padding: $s40 $s56 $s80;
+    flex-direction: column;
+    gap: $s24;
+  }
+
+  .carouselItem {
+    gap: $s24;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .section {
+    margin: $s64 0;
+  }
+
+  .wrapper {
+    padding: $s24 $s24 $s80;
   }
 }

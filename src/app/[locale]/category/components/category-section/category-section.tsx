@@ -1,5 +1,7 @@
 "use client";
 
+import { RadioButton } from "@albedo13/client-blog-ui-kit";
+import { CheckboxButton } from "@albedo13/client-blog-ui-kit";
 import { ChangeEvent, useEffect, useState } from "react";
 import { useTranslations } from "use-intl";
 
@@ -8,9 +10,7 @@ import { POSTS_PER_PAGE } from "@/constants/constants";
 import { POSTS } from "@/data/blog-posts";
 import { CATEGORIES } from "@/data/categories";
 import { TAGS } from "@/data/tags";
-import { useRouteChanger } from "@/hooks/use-route-changer";
-import { CheckboxButton } from "@/libs/ui/checkboxes/checkboxes";
-import { RadioButton } from "@/libs/ui/radios/radios";
+import { useCategoryChanger } from "@/hooks/use-category-changer";
 import { BlogPost } from "@/types";
 
 import styles from "./category-section.module.scss";
@@ -20,7 +20,7 @@ export function CategorySection() {
   const [searchText, setSearchText] = useState("");
   const [filteredPosts, setFilteredPosts] = useState<BlogPost[]>([]);
   const { searchParams, getParam, getParamsList, handleCategoryChange, handleTagChange, isTagInURL } =
-    useRouteChanger();
+    useCategoryChanger();
 
   useEffect(() => {
     filterPosts();

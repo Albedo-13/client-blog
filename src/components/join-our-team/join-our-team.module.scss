@@ -10,12 +10,17 @@
   font-family: $second-family;
   font-weight: $fw700;
   font-size: $fs36;
-  
+
   color: $denim;
 }
 
 .subtitle {
-  
   color: $gray;
   margin: $s16 auto $s32;
+}
+
+@media (max-width: $screen-sm) {
+  .section {
+    margin: $s64 auto;
+  }
 }

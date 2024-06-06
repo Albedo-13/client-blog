@@ -5,8 +5,10 @@ import { BlogPostHeader } from "./blog-post-header/blog-post-header";
 export function BlogPost({ post }: any) {
   return (
     <section className={styles.section}>
-      <BlogPostHeader post={post} />
-      <BlogPostContent post={post} />
+      <div className="container">
+        <BlogPostHeader post={post} />
+        <BlogPostContent post={post} />
+      </div>
     </section>
   );
 }
