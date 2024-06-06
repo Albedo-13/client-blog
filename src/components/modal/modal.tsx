@@ -14,7 +14,7 @@ export function Modal({ onClose, children }: ModalProps) {
     }
   };
   const handleEscapeClick = (e: KeyboardEvent) => {
-    if ((e as KeyboardEvent).key === "Escape") {
+    if (e.key === "Escape") {
       onClose();
     }
   };

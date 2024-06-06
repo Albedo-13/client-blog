@@ -15,18 +15,20 @@ const MAX_PAGE = Math.ceil(POSTS.length / POSTS_PER_PAGE);
 export function BlogCards() {
   const t = useTranslations("BlogCards");
   const [page, setPage] = useState(MIN_PAGE);
+  const prevPage = page - 1;
+  const nextPage = page + 1;
 
   const handlePrevClick = () => {
-    if (page - 1 < MIN_PAGE) return;
-    setPage(page - 1);
+    if (prevPage < MIN_PAGE) return;
+    setPage(prevPage);
   };
 
   const handleNextClick = () => {
-    if (page + 1 > MAX_PAGE) return;
-    setPage(() => page + 1);
+    if (nextPage > MAX_PAGE) return;
+    setPage(() => nextPage);
   };
 
-  const filteredPosts = POSTS.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
+  const filteredPosts = POSTS.slice(prevPage * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
   return (
     <section className={styles.section}>
       <div className="container">

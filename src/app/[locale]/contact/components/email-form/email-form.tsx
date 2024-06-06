@@ -6,6 +6,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 
+import { getBuildEnv } from "@/utils/env-mapper";
+
 import styles from "./email-form.module.scss";
 import { schema } from "./form-schema";
 import { InputWithError } from "./input-with-error/input-with-error";
@@ -16,9 +18,9 @@ type FormDataType = {
   message?: string;
 };
 
-const serviceId = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID;
-const publicKey = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;
-const templateId = process.env.NEXT_PUBLIC_EMAIL_CONTACT_TEMPLATE_ID;
+const serviceId = getBuildEnv("EMAIL_SERVICE_ID");
+const publicKey = getBuildEnv("EMAIL_PUBLIC_KEY");
+const templateId = getBuildEnv("EMAIL_CONTACT_TEMPLATE_ID");
 
 export function EmailForm() {
   const t = useTranslations("EmailForm");

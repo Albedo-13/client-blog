@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 
+import { AVATAR_HEIGHT, AVATAR_WIDTH } from "@/constants/image-sizes";
 import { TESTIMONIALS } from "@/data/testimonials";
 
 import styles from "./testimonials.module.scss";
@@ -57,8 +58,8 @@ export function Testimonials() {
                     <Image
                       src={testimonial.image}
                       alt={testimonial.name}
-                      width={48}
-                      height={48}
+                      width={AVATAR_WIDTH}
+                      height={AVATAR_HEIGHT}
                       className={styles.authorImage}
                     />
                     <div>

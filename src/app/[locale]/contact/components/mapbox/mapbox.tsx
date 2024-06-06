@@ -9,10 +9,11 @@ import Map, { GeolocateControl, Marker, NavigationControl, Popup } from "react-m
 
 import pointIcon from "/public/mapbox/point-icon.svg";
 import { MAPBOX_POINTS } from "@/constants/mapbox-points";
+import { getBuildEnv } from "@/utils/env-mapper";
 
 import styles from "./mapbox.module.scss";
 
-const mapboxToken = process.env.NEXT_PUBLIC_MAPBOX_API_KEY;
+const mapboxToken = getBuildEnv("MAPBOX_API_KEY");
 
 export function Mapbox() {
   const [selectedMarker, setSelectedMarker] = useState<(typeof MAPBOX_POINTS)[0] | null>(null);

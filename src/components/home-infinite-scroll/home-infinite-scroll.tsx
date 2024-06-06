@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment, useRef, useState } from "react";
 
 import { FeaturedPosts } from "@/app/[locale]/components/featured-posts/featured-posts";
 import { LogosList } from "@/app/[locale]/components/logos-list/logos-list";
@@ -10,6 +10,7 @@ import { AboutUs } from "@/components/about-us/about-us";
 import { AuthorsList } from "@/components/authors-list/authors-list";
 import { ChooseCategory } from "@/components/choose-category/choose-category";
 import { JoinOurTeam } from "@/components/join-our-team/join-our-team";
+import { useInfiniteScroll } from "@/hooks/use-infinite-scroll";
 
 const HomeComponents = [
   { component: FeaturedPosts, id: 1 },
@@ -25,27 +26,7 @@ const HomeComponents = [
 export function HomeInfiniteScroll() {
   const [page, setPage] = useState(1);
   const observerTarget = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setPage((prevPage) => prevPage + 1);
-        }
-      },
-      { threshold: 1 }
-    );
-
-    if (observerTarget.current) {
-      observer.observe(observerTarget.current);
-    }
-
-    return () => {
-      if (observerTarget.current) {
-        observer.unobserve(observerTarget.current);
-      }
-    };
-  }, [observerTarget]);
+  useInfiniteScroll(observerTarget, setPage);
 
   return (
     <>

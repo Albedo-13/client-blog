@@ -13,6 +13,8 @@ import facebookNegIcon from "/public/socials/facebook-neg.svg";
 import instagramNegIcon from "/public/socials/instagram-neg.svg";
 import linkedinNegIcon from "/public/socials/linkedin-neg.svg";
 import twitterNegIcon from "/public/socials/twitter-neg.svg";
+import { ICON_HEIGHT, ICON_WIDTH } from "@/constants/image-sizes";
+import { getBuildEnv } from "@/utils/env-mapper";
 
 import { Navigation } from "../navigation/navigation";
 import styles from "./footer.module.scss";
@@ -22,9 +24,9 @@ type FormDataType = {
   email?: string;
 };
 
-const serviceId = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID;
-const publicKey = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;
-const templateId = process.env.NEXT_PUBLIC_EMAIL_FOOTER_TEMPLATE_ID;
+const serviceId = getBuildEnv("EMAIL_SERVICE_ID");
+const publicKey = getBuildEnv("EMAIL_PUBLIC_KEY");
+const templateId = getBuildEnv("EMAIL_FOOTER_TEMPLATE_ID");
 
 export function Footer() {
   const t = useTranslations("Footer");
@@ -74,16 +76,16 @@ export function Footer() {
           </div>
           <div className={styles.socials}>
             <Link href="https://www.facebook.com/ModsenSoftware/">
-              <Image src={facebookNegIcon} alt="facebook" width={24} height={24} />
+              <Image src={facebookNegIcon} alt="facebook" width={ICON_WIDTH} height={ICON_HEIGHT} />
             </Link>
             <Link href="https://x.com/modsencompany">
-              <Image src={twitterNegIcon} alt="twitter" width={24} height={24} />
+              <Image src={twitterNegIcon} alt="twitter" width={ICON_WIDTH} height={ICON_HEIGHT} />
             </Link>
             <Link href="https://www.instagram.com/modsencompany/">
-              <Image src={instagramNegIcon} alt="instagram" width={24} height={24} />
+              <Image src={instagramNegIcon} alt="instagram" width={ICON_WIDTH} height={ICON_HEIGHT} />
             </Link>
             <Link href="https://www.linkedin.com/company/modsen/">
-              <Image src={linkedinNegIcon} alt="linkedin" width={24} height={24} />
+              <Image src={linkedinNegIcon} alt="linkedin" width={ICON_WIDTH} height={ICON_HEIGHT} />
             </Link>
           </div>
         </address>

@@ -27,7 +27,7 @@
     "noPosts": "Посты не найдены..."
   },
   "BlogPostHeader": {
-    "postedOn": "Опубликовано"
+    "postedOn": "Опубликовано {date}"
   },
   "OtherPosts": {
     "readNext": "Читайте далее"
@@ -62,7 +62,7 @@
   },
   "HomeHero": {
     "readMore": "Читать далее >",
-    "postedOn": "Опубликовано в"
+    "postedOn": "Опубликовано в {category}"
   },
   "LogosList": {
     "weAre": "Мы",

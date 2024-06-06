@@ -1,5 +1,7 @@
 import YouTube from "react-youtube";
 
+import { getBuildEnv } from "@/utils/env-mapper";
+
 export function YoutubePlayer() {
   const options = {
     width: "100%",
@@ -9,5 +11,5 @@ export function YoutubePlayer() {
     },
   };
 
-  return <YouTube videoId={process.env.NEXT_PUBLIC_YOUTUBE_VIDEO_ID} opts={options} />;
+  return <YouTube videoId={getBuildEnv("YOUTUBE_VIDEO_ID")} opts={options} />;
 }

@@ -25,9 +25,7 @@ export async function BlogPostHeader({ post }: BlogPostHeaderProps) {
         />
         <div>
           <p className={styles.author}>{post.author.name}</p>
-          <p className={styles.creds}>
-            {t("postedOn")} {post.date}
-          </p>
+          <p className={styles.creds}>{t("postedOn", { date: post.date })}</p>
         </div>
       </div>
       <h1 className={styles.title}>{post.title}</h1>

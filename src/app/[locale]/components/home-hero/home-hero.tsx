@@ -18,9 +18,7 @@ export function HomeHero() {
     <section className={styles.section}>
       <div>
         <div className="container">
-          <p className={styles.subtitle}>
-            {t("postedOn")} <span>{post.category.label}</span>
-          </p>
+          <p className={styles.subtitle}>{t("postedOn", { category: post.category.label })}</p>
           <h1 className={styles.title}>{post.title}</h1>
           <p className={styles.creds}>
             By <span>{post.author.name}</span> | {post.date}
