@@ -1,5 +1,7 @@
 "use client";
 
+import { RadioButton } from "@albedo13/client-blog-ui-kit";
+import { CheckboxButton } from "@albedo13/client-blog-ui-kit";
 import { ChangeEvent, useEffect, useState } from "react";
 import { useTranslations } from "use-intl";
 
@@ -9,8 +11,6 @@ import { POSTS } from "@/data/blog-posts";
 import { CATEGORIES } from "@/data/categories";
 import { TAGS } from "@/data/tags";
 import { useCategoryChanger } from "@/hooks/use-category-changer";
-import { CheckboxButton } from "@/libs/ui/checkboxes/checkboxes";
-import { RadioButton } from "@/libs/ui/radios/radios";
 import { BlogPost } from "@/types";
 
 import styles from "./category-section.module.scss";

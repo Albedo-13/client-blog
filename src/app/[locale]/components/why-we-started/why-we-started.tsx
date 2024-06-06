@@ -1,12 +1,12 @@
 "use client";
 
+import { Button } from "@albedo13/client-blog-ui-kit";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 import whyStartedImage from "/public/images/people-hugging-together.webp";
 import { Routes } from "@/constants/routes";
 import { useRedirect } from "@/hooks/use-redirect";
-import { Button } from "@/libs/ui/buttons/buttons";
 
 import styles from "./why-we-started.module.scss";
 

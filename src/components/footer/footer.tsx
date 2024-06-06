@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@albedo13/client-blog-ui-kit";
 import emailjs from "@emailjs/browser";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Image from "next/image";
@@ -12,7 +13,6 @@ import facebookNegIcon from "/public/socials/facebook-neg.svg";
 import instagramNegIcon from "/public/socials/instagram-neg.svg";
 import linkedinNegIcon from "/public/socials/linkedin-neg.svg";
 import twitterNegIcon from "/public/socials/twitter-neg.svg";
-import { Button } from "@/libs/ui/buttons/buttons";
 
 import { Navigation } from "../navigation/navigation";
 import styles from "./footer.module.scss";

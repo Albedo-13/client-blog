@@ -1,11 +1,10 @@
 "use client";
 
+import { Button } from "@albedo13/client-blog-ui-kit";
 import emailjs from "@emailjs/browser";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
-
-import { Button } from "@/libs/ui/buttons/buttons";
 
 import styles from "./email-form.module.scss";
 import { schema } from "./form-schema";

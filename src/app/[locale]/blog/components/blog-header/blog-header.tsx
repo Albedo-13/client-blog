@@ -1,12 +1,12 @@
 "use client";
 
+import { Button } from "@albedo13/client-blog-ui-kit";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 import { Routes } from "@/constants/routes";
 import { POSTS } from "@/data/blog-posts";
 import { useRedirect } from "@/hooks/use-redirect";
-import { Button } from "@/libs/ui/buttons/buttons";
 
 import styles from "./blog-header.module.scss";
 

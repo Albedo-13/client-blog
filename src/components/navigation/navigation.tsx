@@ -1,6 +1,5 @@
 "use client";
 
-// TODO: change all lib imports, clean local ones
 import { Button } from "@albedo13/client-blog-ui-kit";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
