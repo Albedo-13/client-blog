@@ -6,7 +6,7 @@ import { Routes } from "@/constants/routes";
 import styles from "./post-card.module.scss";
 
 type BlogCardProps = {
-  id: number,
+  id: number;
   title: string;
   description: string;
   image: string;
