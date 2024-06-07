@@ -47,9 +47,13 @@ export function Testimonials() {
           <div className={styles.separatorVertical} aria-hidden="true"></div>
 
           <div className={styles.carousel}>
-            <div style={{ transform: `translateX(calc(-100% * ${slide}))` }} className={styles.carouselWrapper}>
+            <div
+              style={{ transform: `translateX(calc(-100% * ${slide}))` }}
+              className={styles.carouselWrapper}
+              data-testid="carousel-wrapper"
+            >
               {testimonials.map((testimonial) => (
-                <div className={styles.carouselItem} key={testimonial.id}>
+                <div className={styles.carouselItem} key={testimonial.id} data-testid="testimonial-item">
                   <p className={styles.testimonial}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.
