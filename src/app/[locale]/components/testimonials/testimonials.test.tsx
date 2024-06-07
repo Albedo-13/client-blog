@@ -1,24 +1,12 @@
 import "@testing-library/jest-dom";
 
 import { fireEvent, render, screen } from "@testing-library/react";
-import { AbstractIntlMessages, NextIntlClientProvider } from "next-intl";
 import { ReactNode } from "react";
 
 import { TESTIMONIALS } from "@/data/testimonials";
+import { LocaleTestProvider } from "@/tests/helpers/locale-provider";
 
 import { Testimonials } from "./testimonials";
-
-const LocaleTestProvider = ({
-  children,
-  messages,
-}: {
-  children: React.ReactNode;
-  messages?: AbstractIntlMessages | undefined;
-}) => (
-  <NextIntlClientProvider messages={messages} locale="en">
-    {children}
-  </NextIntlClientProvider>
-);
 
 const localeRender = (ui: ReactNode) =>
   render(ui, {
