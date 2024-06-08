@@ -59,7 +59,7 @@ export function Footer() {
     <footer className={styles.footer} onSubmit={handleSubmit(sendEmail)}>
       <div className="container">
         <Navigation videoVisible={false} policyVisible={true} />
-        <form ref={formRef} className={styles.wrapper}>
+        <form ref={formRef} className={styles.wrapper} data-testid="footer-form">
           <h2 className={styles.title}>{t("title")}</h2>
           <div className={styles.inputWrapper}>
             <input {...register("email")} className={styles.input} placeholder={t("inputPlaceholder")} type="text" />
