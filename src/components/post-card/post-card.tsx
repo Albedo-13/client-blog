@@ -19,7 +19,7 @@ type BlogCardProps = {
 
 export function PostCard({ id, title, description, image, category }: BlogCardProps) {
   return (
-    <Link href={`${Routes.BLOG}/${id}`} className={styles.card}>
+    <Link href={`${Routes.BLOG}/${id}`} className={styles.card} data-testid="post-card">
       <Image src={image} alt={title} className={styles.image} width={350} height={250} />
       <div className={styles.wrapper}>
         <p className={styles.category}>{category.label}</p>
